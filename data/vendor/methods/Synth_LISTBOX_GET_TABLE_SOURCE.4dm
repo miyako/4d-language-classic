@@ -1,11 +1,11 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Text
-var $v3 : Text
-LISTBOX GET TABLE SOURCE(*;"synthText";$v1;$v2;$v3)
+var $tableNum1 : Integer
+var $name2 : Text
+var $highlightName3 : Text
+LISTBOX GET TABLE SOURCE(*;"synthText";$tableNum1;$name2;$highlightName3)
 // overload 1
-var $v4 : Variant
-var $v5 : Integer
-var $v6 : Text
-var $v7 : Text
-LISTBOX GET TABLE SOURCE($v4;$v5;$v6;$v7)
+var $object4 : Variant
+var $tableNum5 : Integer
+var $name6 : Text
+var $highlightName7 : Text
+LISTBOX GET TABLE SOURCE($object4;$tableNum5;$name6;$highlightName7)

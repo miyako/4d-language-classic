@@ -1,13 +1,13 @@
 // overload 0
-var $v1 : Boolean
-var $v2 : Boolean
-var $v3 : Boolean
-var $v4 : Boolean
-OBJECT GET DRAG AND DROP OPTIONS(*;"synthText";$v1;$v2;$v3;$v4)
+var $draggable1 : Boolean
+var $automaticDrag2 : Boolean
+var $droppable3 : Boolean
+var $automaticDrop4 : Boolean
+OBJECT GET DRAG AND DROP OPTIONS(*;"synthText";$draggable1;$automaticDrag2;$droppable3;$automaticDrop4)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v5 : Variant
-var $v6 : Boolean
-var $v7 : Boolean
-var $v8 : Boolean
-var $v9 : Boolean
-OBJECT GET DRAG AND DROP OPTIONS($v5;$v6;$v7;$v8;$v9)
+var $object5 : Variant
+var $draggable6 : Boolean
+var $automaticDrag7 : Boolean
+var $droppable8 : Boolean
+var $automaticDrop9 : Boolean
+OBJECT GET DRAG AND DROP OPTIONS($object5;$draggable6;$automaticDrag7;$droppable8;$automaticDrop9)

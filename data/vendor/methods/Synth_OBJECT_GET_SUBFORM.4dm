@@ -1,11 +1,11 @@
 // overload 0
-var $v1 : Pointer
-var $v2 : Text
-var $v3 : Text
-OBJECT GET SUBFORM(*;"synthText";$v1;$v2;$v3)
+var $tablePtr1 : Pointer
+var $detailSubform2 : Text
+var $listSubform3 : Text
+OBJECT GET SUBFORM(*;"synthText";$tablePtr1;$detailSubform2;$listSubform3)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v4 : Variant
-var $v5 : Pointer
-var $v6 : Text
-var $v7 : Text
-OBJECT GET SUBFORM($v4;$v5;$v6;$v7)
+var $object4 : Variant
+var $tablePtr5 : Pointer
+var $detailSubform6 : Text
+var $listSubform7 : Text
+OBJECT GET SUBFORM($object4;$tablePtr5;$detailSubform6;$listSubform7)

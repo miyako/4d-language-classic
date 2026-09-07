@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Picture
-ARRAY TEXT($arr2;0)
-GET PICTURE FORMATS($v1;$arr2)
+var $picture1 : Picture
+ARRAY TEXT($codecIDs2;0)
+GET PICTURE FORMATS($picture1;$codecIDs2)

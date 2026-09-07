@@ -1,4 +1,4 @@
 // overload 0
-ARRAY REAL($arr1;0)
-ARRAY REAL($arr2;0)
-QR SET SORTS(1;$arr1;$arr2)
+ARRAY REAL($aColumns1;0)
+ARRAY REAL($aOrders2;0)
+QR SET SORTS(1;$aColumns1;$aOrders2)

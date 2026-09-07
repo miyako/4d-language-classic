@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-var $v3 : Integer
-var $v4 : Integer
-SCREEN COORDINATES($v1;$v2;$v3;$v4;1;1)
+var $left1 : Integer
+var $top2 : Integer
+var $right3 : Integer
+var $bottom4 : Integer
+SCREEN COORDINATES($left1;$top2;$right3;$bottom4;1;1)

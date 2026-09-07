@@ -1,2 +1,2 @@
 // overload 0
-ARRAY BOOLEAN($arr1;1;1)
+ARRAY BOOLEAN($arrayName1;1;1)

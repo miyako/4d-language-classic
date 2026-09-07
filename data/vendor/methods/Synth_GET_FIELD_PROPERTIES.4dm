@@ -1,15 +1,15 @@
 // overload 0
-var $v1 : Pointer
-var $v2 : Integer
-var $v3 : Integer
-var $v4 : Boolean
-var $v5 : Boolean
-var $v6 : Boolean
-GET FIELD PROPERTIES($v1;$v2;$v3;$v4;$v5;$v6)
+var $fieldPtr1 : Pointer
+var $fieldType2 : Integer
+var $fieldLength3 : Integer
+var $indexed4 : Boolean
+var $unique5 : Boolean
+var $invisible6 : Boolean
+GET FIELD PROPERTIES($fieldPtr1;$fieldType2;$fieldLength3;$indexed4;$unique5;$invisible6)
 // overload 1
-var $v7 : Integer
-var $v8 : Integer
-var $v9 : Boolean
-var $v10 : Boolean
-var $v11 : Boolean
-GET FIELD PROPERTIES(1;1;$v7;$v8;$v9;$v10;$v11)
+var $fieldType7 : Integer
+var $fieldLength8 : Integer
+var $indexed9 : Boolean
+var $unique10 : Boolean
+var $invisible11 : Boolean
+GET FIELD PROPERTIES(1;1;$fieldType7;$fieldLength8;$indexed9;$unique10;$invisible11)

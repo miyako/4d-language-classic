@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Picture
-FORM SCREENSHOT([SynthTable];"synthText";$v1;1)
+var $formPict1 : Picture
+FORM SCREENSHOT([SynthTable];"synthText";$formPict1;1)

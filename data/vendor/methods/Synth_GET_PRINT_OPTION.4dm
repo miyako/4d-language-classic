@@ -1,80 +1,80 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-GET PRINT OPTION("synthText";$v1;$v2)
+var $value11 : Integer
+var $value22 : Integer
+GET PRINT OPTION("synthText";$value11;$value22)
 // overload 0 enum-sweep PrintOptionSelector=Paper option
-var $v3 : Integer
-var $v4 : Integer
-GET PRINT OPTION(Paper option;$v3;$v4)
+var $value13 : Integer
+var $value24 : Integer
+GET PRINT OPTION(Paper option;$value13;$value24)
 // overload 0 enum-sweep PrintOptionSelector=Orientation option
-var $v5 : Integer
-var $v6 : Integer
-GET PRINT OPTION(Orientation option;$v5;$v6)
+var $value15 : Integer
+var $value26 : Integer
+GET PRINT OPTION(Orientation option;$value15;$value26)
 // overload 0 enum-sweep PrintOptionSelector=Scale option
-var $v7 : Integer
-var $v8 : Integer
-GET PRINT OPTION(Scale option;$v7;$v8)
+var $value17 : Integer
+var $value28 : Integer
+GET PRINT OPTION(Scale option;$value17;$value28)
 // overload 0 enum-sweep PrintOptionSelector=Number of copies option
-var $v9 : Integer
-var $v10 : Integer
-GET PRINT OPTION(Number of copies option;$v9;$v10)
+var $value19 : Integer
+var $value210 : Integer
+GET PRINT OPTION(Number of copies option;$value19;$value210)
 // overload 0 enum-sweep PrintOptionSelector=Paper source option
-var $v11 : Integer
-var $v12 : Integer
-GET PRINT OPTION(Paper source option;$v11;$v12)
+var $value111 : Integer
+var $value212 : Integer
+GET PRINT OPTION(Paper source option;$value111;$value212)
 // overload 0 enum-sweep PrintOptionSelector=Color option
-var $v13 : Integer
-var $v14 : Integer
-GET PRINT OPTION(Color option;$v13;$v14)
+var $value113 : Integer
+var $value214 : Integer
+GET PRINT OPTION(Color option;$value113;$value214)
 // overload 0 enum-sweep PrintOptionSelector=Destination option
-var $v15 : Integer
-var $v16 : Integer
-GET PRINT OPTION(Destination option;$v15;$v16)
+var $value115 : Integer
+var $value216 : Integer
+GET PRINT OPTION(Destination option;$value115;$value216)
 // overload 0 enum-sweep PrintOptionSelector=Double sided option
-var $v17 : Integer
-var $v18 : Integer
-GET PRINT OPTION(Double sided option;$v17;$v18)
+var $value117 : Integer
+var $value218 : Integer
+GET PRINT OPTION(Double sided option;$value117;$value218)
 // overload 0 enum-sweep PrintOptionSelector=Spooler document name option
-var $v19 : Integer
-var $v20 : Integer
-GET PRINT OPTION(Spooler document name option;$v19;$v20)
+var $value119 : Integer
+var $value220 : Integer
+GET PRINT OPTION(Spooler document name option;$value119;$value220)
 // overload 0 enum-sweep PrintOptionSelector=Mac spool file format option
-var $v21 : Integer
-var $v22 : Integer
-GET PRINT OPTION(Mac spool file format option;$v21;$v22)
+var $value121 : Integer
+var $value222 : Integer
+GET PRINT OPTION(Mac spool file format option;$value121;$value222)
 // overload 0 enum-sweep PrintOptionSelector=Page range option
-var $v23 : Integer
-var $v24 : Integer
-GET PRINT OPTION(Page range option;$v23;$v24)
+var $value123 : Integer
+var $value224 : Integer
+GET PRINT OPTION(Page range option;$value123;$value224)
 // overload 0 enum-sweep PrintOptionSelector=Legacy printing layer option
-var $v25 : Integer
-var $v26 : Integer
-GET PRINT OPTION(Legacy printing layer option;$v25;$v26)
+var $value125 : Integer
+var $value226 : Integer
+GET PRINT OPTION(Legacy printing layer option;$value125;$value226)
 // overload 0 enum-sweep PrintOptionSelector=Print preview option
-var $v27 : Integer
-var $v28 : Integer
-GET PRINT OPTION(Print preview option;$v27;$v28)
+var $value127 : Integer
+var $value228 : Integer
+GET PRINT OPTION(Print preview option;$value127;$value228)
 // overload 0 union-sweep option=enum_ref:PrintOptionSelector
-var $v29 : Integer
-var $v30 : Integer
-GET PRINT OPTION(Paper option;$v29;$v30)
+var $value129 : Integer
+var $value230 : Integer
+GET PRINT OPTION(Paper option;$value129;$value230)
 // overload 0 union-sweep option=Text
-var $v31 : Integer
-var $v32 : Integer
-GET PRINT OPTION("synthText";$v31;$v32)
+var $value131 : Integer
+var $value232 : Integer
+GET PRINT OPTION("synthText";$value131;$value232)
 // overload 0 union-sweep value1=Integer
-var $v33 : Integer
-var $v34 : Integer
-GET PRINT OPTION("synthText";$v33;$v34)
+var $value133 : Integer
+var $value234 : Integer
+GET PRINT OPTION("synthText";$value133;$value234)
 // overload 0 union-sweep value1=Text
-var $v35 : Text
-var $v36 : Integer
-GET PRINT OPTION("synthText";$v35;$v36)
+var $value135 : Text
+var $value236 : Integer
+GET PRINT OPTION("synthText";$value135;$value236)
 // overload 0 union-sweep value2=Integer
-var $v37 : Integer
-var $v38 : Integer
-GET PRINT OPTION("synthText";$v37;$v38)
+var $value137 : Integer
+var $value238 : Integer
+GET PRINT OPTION("synthText";$value137;$value238)
 // overload 0 union-sweep value2=Text
-var $v39 : Integer
-var $v40 : Text
-GET PRINT OPTION("synthText";$v39;$v40)
+var $value139 : Integer
+var $value240 : Text
+GET PRINT OPTION("synthText";$value139;$value240)

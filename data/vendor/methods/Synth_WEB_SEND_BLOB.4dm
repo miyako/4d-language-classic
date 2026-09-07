@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-WEB SEND BLOB($v1;"synthText")
+var $blob1 : Variant
+WEB SEND BLOB($blob1;"synthText")

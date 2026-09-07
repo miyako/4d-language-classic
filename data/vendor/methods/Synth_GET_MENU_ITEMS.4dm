@@ -1,12 +1,12 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY TEXT($arr2;0)
-GET MENU ITEMS(1;$arr1;$arr2)
+ARRAY TEXT($menuTitlesArray1;0)
+ARRAY TEXT($menuRefsArray2;0)
+GET MENU ITEMS(1;$menuTitlesArray1;$menuRefsArray2)
 // overload 0 union-sweep menu=Integer
-ARRAY TEXT($arr3;0)
-ARRAY TEXT($arr4;0)
-GET MENU ITEMS(1;$arr3;$arr4)
+ARRAY TEXT($menuTitlesArray3;0)
+ARRAY TEXT($menuRefsArray4;0)
+GET MENU ITEMS(1;$menuTitlesArray3;$menuRefsArray4)
 // overload 0 union-sweep menu=Text
-ARRAY TEXT($arr5;0)
-ARRAY TEXT($arr6;0)
-GET MENU ITEMS("synthText";$arr5;$arr6)
+ARRAY TEXT($menuTitlesArray5;0)
+ARRAY TEXT($menuRefsArray6;0)
+GET MENU ITEMS("synthText";$menuTitlesArray5;$menuRefsArray6)

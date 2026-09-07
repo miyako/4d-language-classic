@@ -1,12 +1,12 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Pointer
-var $v3 : Text
-var $v4 : Text
-METHOD RESOLVE PATH("synthText";$v1;$v2;$v3;$v4;*)
+var $methodType1 : Integer
+var $ptrTable2 : Pointer
+var $objectName3 : Text
+var $formObjectName4 : Text
+METHOD RESOLVE PATH("synthText";$methodType1;$ptrTable2;$objectName3;$formObjectName4;*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v5 : Integer
-var $v6 : Pointer
-var $v7 : Text
-var $v8 : Text
-METHOD RESOLVE PATH("synthText";$v5;$v6;$v7;$v8)
+var $methodType5 : Integer
+var $ptrTable6 : Pointer
+var $objectName7 : Text
+var $formObjectName8 : Text
+METHOD RESOLVE PATH("synthText";$methodType5;$ptrTable6;$objectName7;$formObjectName8)

@@ -1,14 +1,14 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
+var $fileToZip1 : Variant
+var $destinationFile2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=ZIP Create archive($v1;$v2)
+$synthResult3:=ZIP Create archive($fileToZip1;$destinationFile2)
 // overload 1
-var $v4 : Variant
-var $v5 : Variant
+var $folderToZip4 : Variant
+var $destinationFile5 : Variant
 var $synthResult6 : Variant
-$synthResult6:=ZIP Create archive($v4;$v5;1)
+$synthResult6:=ZIP Create archive($folderToZip4;$destinationFile5;1)
 // overload 2
-var $v7 : Variant
+var $destinationFile7 : Variant
 var $synthResult8 : Variant
-$synthResult8:=ZIP Create archive(New object;$v7)
+$synthResult8:=ZIP Create archive(New object;$destinationFile7)

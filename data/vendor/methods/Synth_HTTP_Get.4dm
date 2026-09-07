@@ -1,42 +1,42 @@
 // overload 0
-var $v1 : Variant
-ARRAY TEXT($arr2;0)
-ARRAY TEXT($arr3;0)
+var $response1 : Variant
+ARRAY TEXT($headerNames2;0)
+ARRAY TEXT($headerValues3;0)
 var $synthResult4 : Variant
-$synthResult4:=HTTP Get("synthText";$v1;$arr2;$arr3;*)
+$synthResult4:=HTTP Get("synthText";$response1;$headerNames2;$headerValues3;*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v5 : Variant
-ARRAY TEXT($arr6;0)
-ARRAY TEXT($arr7;0)
+var $response5 : Variant
+ARRAY TEXT($headerNames6;0)
+ARRAY TEXT($headerValues7;0)
 var $synthResult8 : Variant
-$synthResult8:=HTTP Get("synthText";$v5;$arr6;$arr7)
+$synthResult8:=HTTP Get("synthText";$response5;$headerNames6;$headerValues7)
 // overload 0 union-sweep response=Text
-var $v9 : Text
-ARRAY TEXT($arr10;0)
-ARRAY TEXT($arr11;0)
+var $response9 : Text
+ARRAY TEXT($headerNames10;0)
+ARRAY TEXT($headerValues11;0)
 var $synthResult12 : Variant
-$synthResult12:=HTTP Get("synthText";$v9;$arr10;$arr11;*)
+$synthResult12:=HTTP Get("synthText";$response9;$headerNames10;$headerValues11;*)
 // overload 0 union-sweep response=Blob
-var $v13 : Variant
-ARRAY TEXT($arr14;0)
-ARRAY TEXT($arr15;0)
+var $response13 : Variant
+ARRAY TEXT($headerNames14;0)
+ARRAY TEXT($headerValues15;0)
 var $synthResult16 : Variant
-$synthResult16:=HTTP Get("synthText";$v13;$arr14;$arr15;*)
+$synthResult16:=HTTP Get("synthText";$response13;$headerNames14;$headerValues15;*)
 // overload 0 union-sweep response=Picture
-var $v17 : Picture
-ARRAY TEXT($arr18;0)
-ARRAY TEXT($arr19;0)
+var $response17 : Picture
+ARRAY TEXT($headerNames18;0)
+ARRAY TEXT($headerValues19;0)
 var $synthResult20 : Variant
-$synthResult20:=HTTP Get("synthText";$v17;$arr18;$arr19;*)
+$synthResult20:=HTTP Get("synthText";$response17;$headerNames18;$headerValues19;*)
 // overload 0 union-sweep response=Object
-var $v21 : Object
-ARRAY TEXT($arr22;0)
-ARRAY TEXT($arr23;0)
+var $response21 : Object
+ARRAY TEXT($headerNames22;0)
+ARRAY TEXT($headerValues23;0)
 var $synthResult24 : Variant
-$synthResult24:=HTTP Get("synthText";$v21;$arr22;$arr23;*)
+$synthResult24:=HTTP Get("synthText";$response21;$headerNames22;$headerValues23;*)
 // overload 0 union-sweep response=Collection
-var $v25 : Collection
-ARRAY TEXT($arr26;0)
-ARRAY TEXT($arr27;0)
+var $response25 : Collection
+ARRAY TEXT($headerNames26;0)
+ARRAY TEXT($headerValues27;0)
 var $synthResult28 : Variant
-$synthResult28:=HTTP Get("synthText";$v25;$arr26;$arr27;*)
+$synthResult28:=HTTP Get("synthText";$response25;$headerNames26;$headerValues27;*)

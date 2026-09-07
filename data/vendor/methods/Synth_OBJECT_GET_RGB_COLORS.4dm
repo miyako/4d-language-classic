@@ -1,41 +1,41 @@
 // overload 0
-var $v1 : Text
-var $v2 : Text
-var $v3 : Text
-OBJECT GET RGB COLORS(*;"synthText";$v1;$v2;$v3)
+var $foregroundColor1 : Text
+var $backgroundColor2 : Text
+var $altBackgrndColor3 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor1;$backgroundColor2;$altBackgrndColor3)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v4 : Variant
-var $v5 : Integer
-var $v6 : Integer
-var $v7 : Integer
-OBJECT GET RGB COLORS($v4;$v5;$v6;$v7)
+var $object4 : Variant
+var $foregroundColor5 : Integer
+var $backgroundColor6 : Integer
+var $altBackgrndColor7 : Integer
+OBJECT GET RGB COLORS($object4;$foregroundColor5;$backgroundColor6;$altBackgrndColor7)
 // overload 0 union-sweep foregroundColor=Text
-var $v8 : Text
-var $v9 : Text
-var $v10 : Text
-OBJECT GET RGB COLORS(*;"synthText";$v8;$v9;$v10)
+var $foregroundColor8 : Text
+var $backgroundColor9 : Text
+var $altBackgrndColor10 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor8;$backgroundColor9;$altBackgrndColor10)
 // overload 0 union-sweep foregroundColor=Integer
-var $v11 : Integer
-var $v12 : Text
-var $v13 : Text
-OBJECT GET RGB COLORS(*;"synthText";$v11;$v12;$v13)
+var $foregroundColor11 : Integer
+var $backgroundColor12 : Text
+var $altBackgrndColor13 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor11;$backgroundColor12;$altBackgrndColor13)
 // overload 0 union-sweep backgroundColor=Text
-var $v14 : Text
-var $v15 : Text
-var $v16 : Text
-OBJECT GET RGB COLORS(*;"synthText";$v14;$v15;$v16)
+var $foregroundColor14 : Text
+var $backgroundColor15 : Text
+var $altBackgrndColor16 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor14;$backgroundColor15;$altBackgrndColor16)
 // overload 0 union-sweep backgroundColor=Integer
-var $v17 : Text
-var $v18 : Integer
-var $v19 : Text
-OBJECT GET RGB COLORS(*;"synthText";$v17;$v18;$v19)
+var $foregroundColor17 : Text
+var $backgroundColor18 : Integer
+var $altBackgrndColor19 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor17;$backgroundColor18;$altBackgrndColor19)
 // overload 0 union-sweep altBackgrndColor=Text
-var $v20 : Text
-var $v21 : Text
-var $v22 : Text
-OBJECT GET RGB COLORS(*;"synthText";$v20;$v21;$v22)
+var $foregroundColor20 : Text
+var $backgroundColor21 : Text
+var $altBackgrndColor22 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor20;$backgroundColor21;$altBackgrndColor22)
 // overload 0 union-sweep altBackgrndColor=Integer
-var $v23 : Text
-var $v24 : Text
-var $v25 : Integer
-OBJECT GET RGB COLORS(*;"synthText";$v23;$v24;$v25)
+var $foregroundColor23 : Text
+var $backgroundColor24 : Text
+var $altBackgrndColor25 : Integer
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor23;$backgroundColor24;$altBackgrndColor25)

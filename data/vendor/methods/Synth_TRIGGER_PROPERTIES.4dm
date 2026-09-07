@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-var $v3 : Integer
-TRIGGER PROPERTIES(1;$v1;$v2;$v3)
+var $dbEvent1 : Integer
+var $tableNum2 : Integer
+var $recordNum3 : Integer
+TRIGGER PROPERTIES(1;$dbEvent1;$tableNum2;$recordNum3)

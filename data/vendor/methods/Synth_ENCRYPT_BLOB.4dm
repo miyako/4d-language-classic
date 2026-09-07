@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-var $v3 : Variant
-ENCRYPT BLOB($v1;$v2;$v3)
+var $toEncrypt1 : Variant
+var $sendPrivKey2 : Variant
+var $recipPubKey3 : Variant
+ENCRYPT BLOB($toEncrypt1;$sendPrivKey2;$recipPubKey3)

@@ -1,4 +1,4 @@
 // overload 0
-ARRAY INTEGER($arr1;0)
-ARRAY TEXT($arr2;0)
-GET SERIAL PORT MAPPING($arr1;$arr2)
+ARRAY INTEGER($numArray1;0)
+ARRAY TEXT($nameArray2;0)
+GET SERIAL PORT MAPPING($numArray1;$nameArray2)

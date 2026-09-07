@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-GET PASTEBOARD DATA("synthText";$v1)
+var $data1 : Variant
+GET PASTEBOARD DATA("synthText";$data1)

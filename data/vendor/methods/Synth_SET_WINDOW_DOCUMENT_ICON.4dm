@@ -1,26 +1,26 @@
 // overload 0
 SET WINDOW DOCUMENT ICON(1)
 // overload 1
-var $v1 : Picture
-SET WINDOW DOCUMENT ICON(1;$v1)
+var $image1 : Picture
+SET WINDOW DOCUMENT ICON(1;$image1)
 // overload 2
-var $v2 : Variant
-SET WINDOW DOCUMENT ICON(1;$v2)
+var $file2 : Variant
+SET WINDOW DOCUMENT ICON(1;$file2)
 // overload 2 union-sweep file=4D.File
-var $v3 : Variant
-SET WINDOW DOCUMENT ICON(1;$v3)
+var $file3 : Variant
+SET WINDOW DOCUMENT ICON(1;$file3)
 // overload 2 union-sweep file=4D.Folder
-var $v4 : Variant
-SET WINDOW DOCUMENT ICON(1;$v4)
+var $file4 : Variant
+SET WINDOW DOCUMENT ICON(1;$file4)
 // overload 3
-var $v5 : Picture
-var $v6 : Variant
-SET WINDOW DOCUMENT ICON(1;$v5;$v6)
+var $image5 : Picture
+var $file6 : Variant
+SET WINDOW DOCUMENT ICON(1;$image5;$file6)
 // overload 3 union-sweep file=4D.File
-var $v7 : Picture
-var $v8 : Variant
-SET WINDOW DOCUMENT ICON(1;$v7;$v8)
+var $image7 : Picture
+var $file8 : Variant
+SET WINDOW DOCUMENT ICON(1;$image7;$file8)
 // overload 3 union-sweep file=4D.Folder
-var $v9 : Picture
-var $v10 : Variant
-SET WINDOW DOCUMENT ICON(1;$v9;$v10)
+var $image9 : Picture
+var $file10 : Variant
+SET WINDOW DOCUMENT ICON(1;$image9;$file10)

@@ -1,8 +1,8 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-var $v3 : Integer
-var $v4 : Boolean
-var $v5 : Boolean
-var $v6 : Text
-FORM GET PROPERTIES([SynthTable];"synthText";$v1;$v2;$v3;$v4;$v5;$v6)
+var $width1 : Integer
+var $height2 : Integer
+var $numPages3 : Integer
+var $fixedWidth4 : Boolean
+var $fixedHeight5 : Boolean
+var $title6 : Text
+FORM GET PROPERTIES([SynthTable];"synthText";$width1;$height2;$numPages3;$fixedWidth4;$fixedHeight5;$title6)

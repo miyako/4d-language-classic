@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Variant
+var $printSettings1 : Variant
 var $synthResult2 : Variant
-$synthResult2:=BLOB to print settings($v1;1)
+$synthResult2:=BLOB to print settings($printSettings1;1)

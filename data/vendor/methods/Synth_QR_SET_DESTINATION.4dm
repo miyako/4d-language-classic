@@ -3,5 +3,5 @@ QR SET DESTINATION(1;1;"synthText")
 // overload 0 union-sweep specifics=Text
 QR SET DESTINATION(1;1;"synthText")
 // overload 0 union-sweep specifics=Variable
-var $v1 : Variant
-QR SET DESTINATION(1;1;$v1)
+var $specifics1 : Variant
+QR SET DESTINATION(1;1;$specifics1)

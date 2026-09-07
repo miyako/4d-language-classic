@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-ST GET OPTIONS(*;"synthText";1;$v1;1;$v2)
+var $value1 : Integer
+var $value2 : Integer
+ST GET OPTIONS(*;"synthText";1;$value1;1;$value2)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v3 : Variant
-var $v4 : Integer
-var $v5 : Integer
-ST GET OPTIONS($v3;1;$v4;1;$v5)
+var $object3 : Variant
+var $value4 : Integer
+var $value5 : Integer
+ST GET OPTIONS($object3;1;$value4;1;$value5)

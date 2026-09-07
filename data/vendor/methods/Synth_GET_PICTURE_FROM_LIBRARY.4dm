@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Picture
-GET PICTURE FROM LIBRARY(1;$v1)
+var $picture1 : Picture
+GET PICTURE FROM LIBRARY(1;$picture1)
 // overload 1
-var $v2 : Picture
-GET PICTURE FROM LIBRARY("synthText";$v2)
+var $picture2 : Picture
+GET PICTURE FROM LIBRARY("synthText";$picture2)

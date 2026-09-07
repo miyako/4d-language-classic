@@ -1,2 +1,2 @@
 // overload 0
-ARRAY LONGINT($arr1;1;1)
+ARRAY LONGINT($arrayName1;1;1)

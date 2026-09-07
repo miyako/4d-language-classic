@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Boolean
-var $v2 : Integer
-OBJECT GET PRINT VARIABLE FRAME(*;"synthText";$v1;$v2)
+var $variableFrame1 : Boolean
+var $fixedSubform2 : Integer
+OBJECT GET PRINT VARIABLE FRAME(*;"synthText";$variableFrame1;$fixedSubform2)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v3 : Variant
-var $v4 : Boolean
-var $v5 : Integer
-OBJECT GET PRINT VARIABLE FRAME($v3;$v4;$v5)
+var $object3 : Variant
+var $variableFrame4 : Boolean
+var $fixedSubform5 : Integer
+OBJECT GET PRINT VARIABLE FRAME($object3;$variableFrame4;$fixedSubform5)

@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Text
-RESOLVE ALIAS("synthText";$v1)
+var $targetPath1 : Text
+RESOLVE ALIAS("synthText";$targetPath1)

@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Text
-RECEIVE BUFFER($v1)
+var $receiveVar1 : Text
+RECEIVE BUFFER($receiveVar1)

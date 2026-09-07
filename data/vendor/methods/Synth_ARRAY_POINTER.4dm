@@ -1,2 +1,2 @@
 // overload 0
-ARRAY POINTER($arr1;1;1)
+ARRAY POINTER($arrayName1;1;1)

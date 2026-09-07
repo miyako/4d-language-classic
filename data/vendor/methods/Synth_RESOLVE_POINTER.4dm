@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Pointer
-var $v2 : Text
-var $v3 : Integer
-var $v4 : Integer
-RESOLVE POINTER($v1;$v2;$v3;$v4)
+var $aPointer1 : Pointer
+var $varName2 : Text
+var $tableNum3 : Integer
+var $fieldNum4 : Integer
+RESOLVE POINTER($aPointer1;$varName2;$tableNum3;$fieldNum4)

@@ -1,2 +1,2 @@
 // overload 0
-ARRAY REAL($arr1;1;1)
+ARRAY REAL($arrayName1;1;1)

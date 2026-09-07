@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Text
-var $v2 : Text
-var $v3 : Text
-var $v4 : Integer
-var $v5 : Date
-ARRAY INTEGER($arr6;0)
-var $v7 : Integer
-GET USER PROPERTIES(1;$v1;$v2;$v3;$v4;$v5;$arr6;$v7)
+var $name1 : Text
+var $startup2 : Text
+var $password3 : Text
+var $nbLogin4 : Integer
+var $lastLogin5 : Date
+ARRAY INTEGER($memberships6;0)
+var $groupOwner7 : Integer
+GET USER PROPERTIES(1;$name1;$startup2;$password3;$nbLogin4;$lastLogin5;$memberships6;$groupOwner7)

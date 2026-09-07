@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Text
-var $v2 : Integer
-var $v3 : Integer
-GET STYLE SHEET INFO("synthText";$v1;$v2;$v3)
+var $font1 : Text
+var $size2 : Integer
+var $styles3 : Integer
+GET STYLE SHEET INFO("synthText";$font1;$size2;$styles3)

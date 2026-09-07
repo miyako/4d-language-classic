@@ -1,2 +1,2 @@
 // overload 0
-ARRAY PICTURE($arr1;1;1)
+ARRAY PICTURE($arrayName1;1;1)

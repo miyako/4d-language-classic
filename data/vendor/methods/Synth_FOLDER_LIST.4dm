@@ -1,3 +1,3 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-FOLDER LIST("synthText";$arr1)
+ARRAY TEXT($directories1;0)
+FOLDER LIST("synthText";$directories1)

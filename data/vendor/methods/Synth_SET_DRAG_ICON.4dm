@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Picture
-SET DRAG ICON($v1;1;1)
+var $icon1 : Picture
+SET DRAG ICON($icon1;1;1)

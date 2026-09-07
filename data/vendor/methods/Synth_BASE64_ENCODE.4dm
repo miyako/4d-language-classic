@@ -1,24 +1,24 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-BASE64 ENCODE($v1;$v2;*)
+var $toEncode1 : Variant
+var $encoded2 : Variant
+BASE64 ENCODE($toEncode1;$encoded2;*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v3 : Variant
-var $v4 : Variant
-BASE64 ENCODE($v3;$v4)
+var $toEncode3 : Variant
+var $encoded4 : Variant
+BASE64 ENCODE($toEncode3;$encoded4)
 // overload 0 union-sweep toEncode=Blob
-var $v5 : Variant
-var $v6 : Variant
-BASE64 ENCODE($v5;$v6;*)
+var $toEncode5 : Variant
+var $encoded6 : Variant
+BASE64 ENCODE($toEncode5;$encoded6;*)
 // overload 0 union-sweep toEncode=Text
-var $v7 : Text
-var $v8 : Variant
-BASE64 ENCODE($v7;$v8;*)
+var $toEncode7 : Text
+var $encoded8 : Variant
+BASE64 ENCODE($toEncode7;$encoded8;*)
 // overload 0 union-sweep encoded=Blob
-var $v9 : Variant
-var $v10 : Variant
-BASE64 ENCODE($v9;$v10;*)
+var $toEncode9 : Variant
+var $encoded10 : Variant
+BASE64 ENCODE($toEncode9;$encoded10;*)
 // overload 0 union-sweep encoded=Text
-var $v11 : Variant
-var $v12 : Text
-BASE64 ENCODE($v11;$v12;*)
+var $toEncode11 : Variant
+var $encoded12 : Text
+BASE64 ENCODE($toEncode11;$encoded12;*)

@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-ARRAY TEXT($arr3;0)
-SPELL CHECK TEXT("synthText";$v1;$v2;1;$arr3)
+var $errPos1 : Integer
+var $errLength2 : Integer
+ARRAY TEXT($arrSuggest3;0)
+SPELL CHECK TEXT("synthText";$errPos1;$errLength2;1;$arrSuggest3)

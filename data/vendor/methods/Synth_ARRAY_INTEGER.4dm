@@ -1,2 +1,2 @@
 // overload 0
-ARRAY INTEGER($arr1;1;1)
+ARRAY INTEGER($arrayName1;1;1)

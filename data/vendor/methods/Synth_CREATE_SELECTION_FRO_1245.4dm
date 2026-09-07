@@ -1,9 +1,9 @@
 // overload 0
-ARRAY INTEGER($arr1;0)
-CREATE SELECTION FROM ARRAY([SynthTable];$arr1;"synthText")
+ARRAY INTEGER($recordArray1;0)
+CREATE SELECTION FROM ARRAY([SynthTable];$recordArray1;"synthText")
 // overload 0 union-sweep recordArray=Integer array
-ARRAY INTEGER($arr2;0)
-CREATE SELECTION FROM ARRAY([SynthTable];$arr2;"synthText")
+ARRAY INTEGER($recordArray2;0)
+CREATE SELECTION FROM ARRAY([SynthTable];$recordArray2;"synthText")
 // overload 0 union-sweep recordArray=Boolean array
-ARRAY BOOLEAN($arr3;0)
-CREATE SELECTION FROM ARRAY([SynthTable];$arr3;"synthText")
+ARRAY BOOLEAN($recordArray3;0)
+CREATE SELECTION FROM ARRAY([SynthTable];$recordArray3;"synthText")

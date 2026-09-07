@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Boolean
-var $v2 : Boolean
-GET AUTOMATIC RELATIONS($v1;$v2)
+var $one1 : Boolean
+var $many2 : Boolean
+GET AUTOMATIC RELATIONS($one1;$many2)

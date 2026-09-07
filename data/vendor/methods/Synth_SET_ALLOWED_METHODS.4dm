@@ -1,3 +1,3 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-SET ALLOWED METHODS($arr1)
+ARRAY TEXT($methodsArray1;0)
+SET ALLOWED METHODS($methodsArray1)

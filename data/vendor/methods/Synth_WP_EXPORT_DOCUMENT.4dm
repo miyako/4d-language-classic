@@ -5,11 +5,11 @@ WP EXPORT DOCUMENT(New object;"synthText";1;New object)
 // overload 0 union-sweep option=Integer
 WP EXPORT DOCUMENT(New object;"synthText";1;1)
 // overload 1
-var $v1 : Variant
-WP EXPORT DOCUMENT(New object;$v1;1;New object)
+var $fileObj1 : Variant
+WP EXPORT DOCUMENT(New object;$fileObj1;1;New object)
 // overload 1 union-sweep option=Object
-var $v2 : Variant
-WP EXPORT DOCUMENT(New object;$v2;1;New object)
+var $fileObj2 : Variant
+WP EXPORT DOCUMENT(New object;$fileObj2;1;New object)
 // overload 1 union-sweep option=Integer
-var $v3 : Variant
-WP EXPORT DOCUMENT(New object;$v3;1;1)
+var $fileObj3 : Variant
+WP EXPORT DOCUMENT(New object;$fileObj3;1;1)

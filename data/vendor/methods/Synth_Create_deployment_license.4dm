@@ -1,10 +1,10 @@
 // overload 0
-var $v1 : Variant
+var $mergedApp1 : Variant
 var $synthResult2 : Variant
-$synthResult2:=Create deployment license($v1;1)
+$synthResult2:=Create deployment license($mergedApp1;1)
 // overload 1
-var $v3 : Variant
-var $v4 : Variant
-var $v5 : Variant
+var $mergedApp3 : Variant
+var $buildLicense4 : Variant
+var $oemLicense5 : Variant
 var $synthResult6 : Variant
-$synthResult6:=Create deployment license($v3;$v4;$v5)
+$synthResult6:=Create deployment license($mergedApp3;$buildLicense4;$oemLicense5)

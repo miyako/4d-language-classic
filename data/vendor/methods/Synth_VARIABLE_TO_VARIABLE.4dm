@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-var $v3 : Variant
-var $v4 : Variant
-VARIABLE TO VARIABLE(1;$v1;$v2;$v3;$v4)
+var $dstVar1 : Variant
+var $srcVar2 : Variant
+var $dstVar3 : Variant
+var $srcVar4 : Variant
+VARIABLE TO VARIABLE(1;$dstVar1;$srcVar2;$dstVar3;$srcVar4)

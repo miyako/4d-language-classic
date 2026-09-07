@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Variant
-GET MENU ITEM PROPERTY(1;1;"synthText";$v1;1)
+var $value1 : Variant
+GET MENU ITEM PROPERTY(1;1;"synthText";$value1;1)
 // overload 0 union-sweep menu=Integer
-var $v2 : Variant
-GET MENU ITEM PROPERTY(1;1;"synthText";$v2;1)
+var $value2 : Variant
+GET MENU ITEM PROPERTY(1;1;"synthText";$value2;1)
 // overload 0 union-sweep menu=Text
-var $v3 : Variant
-GET MENU ITEM PROPERTY("synthText";1;"synthText";$v3;1)
+var $value3 : Variant
+GET MENU ITEM PROPERTY("synthText";1;"synthText";$value3;1)

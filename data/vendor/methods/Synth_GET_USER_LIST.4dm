@@ -1,4 +1,4 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY INTEGER($arr2;0)
-GET USER LIST($arr1;$arr2)
+ARRAY TEXT($userNames1;0)
+ARRAY INTEGER($userNumbers2;0)
+GET USER LIST($userNames1;$userNumbers2)

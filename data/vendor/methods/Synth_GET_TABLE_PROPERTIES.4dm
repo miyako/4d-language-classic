@@ -1,15 +1,15 @@
 // overload 0
-var $v1 : Pointer
-var $v2 : Boolean
-var $v3 : Boolean
-var $v4 : Boolean
-var $v5 : Boolean
-var $v6 : Boolean
-GET TABLE PROPERTIES($v1;$v2;$v3;$v4;$v5;$v6)
+var $tablePtr1 : Pointer
+var $invisible2 : Boolean
+var $trigSaveNew3 : Boolean
+var $trigSaveRec4 : Boolean
+var $trigDelRec5 : Boolean
+var $trigLoadRec6 : Boolean
+GET TABLE PROPERTIES($tablePtr1;$invisible2;$trigSaveNew3;$trigSaveRec4;$trigDelRec5;$trigLoadRec6)
 // overload 1
-var $v7 : Boolean
-var $v8 : Boolean
-var $v9 : Boolean
-var $v10 : Boolean
-var $v11 : Boolean
-GET TABLE PROPERTIES(1;$v7;$v8;$v9;$v10;$v11)
+var $invisible7 : Boolean
+var $trigSaveNew8 : Boolean
+var $trigSaveRec9 : Boolean
+var $trigDelRec10 : Boolean
+var $trigLoadRec11 : Boolean
+GET TABLE PROPERTIES(1;$invisible7;$trigSaveNew8;$trigSaveRec9;$trigDelRec10;$trigLoadRec11)

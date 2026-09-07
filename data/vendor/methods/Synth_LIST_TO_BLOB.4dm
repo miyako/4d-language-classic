@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Variant
-LIST TO BLOB(1;$v1;*)
+var $blob1 : Variant
+LIST TO BLOB(1;$blob1;*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v2 : Variant
-LIST TO BLOB(1;$v2)
+var $blob2 : Variant
+LIST TO BLOB(1;$blob2)

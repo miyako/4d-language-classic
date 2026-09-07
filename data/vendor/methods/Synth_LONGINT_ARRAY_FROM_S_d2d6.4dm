@@ -1,3 +1,3 @@
 // overload 0
-ARRAY INTEGER($arr1;0)
-LONGINT ARRAY FROM SELECTION([SynthTable];$arr1;"synthText")
+ARRAY INTEGER($recordArray1;0)
+LONGINT ARRAY FROM SELECTION([SynthTable];$recordArray1;"synthText")

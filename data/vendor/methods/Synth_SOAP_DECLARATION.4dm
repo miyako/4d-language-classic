@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-SOAP DECLARATION($v1;1;1;"synthText")
+var $variable1 : Variant
+SOAP DECLARATION($variable1;1;1;"synthText")

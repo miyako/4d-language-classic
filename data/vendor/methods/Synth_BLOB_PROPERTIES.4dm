@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Integer
-var $v3 : Integer
-var $v4 : Integer
-BLOB PROPERTIES($v1;$v2;$v3;$v4)
+var $blob1 : Variant
+var $compressed2 : Integer
+var $expandedSize3 : Integer
+var $currentSize4 : Integer
+BLOB PROPERTIES($blob1;$compressed2;$expandedSize3;$currentSize4)

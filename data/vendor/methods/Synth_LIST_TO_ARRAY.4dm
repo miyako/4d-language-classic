@@ -1,12 +1,12 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY LONGINT($arr2;0)
-LIST TO ARRAY("synthText";$arr1;$arr2)
+ARRAY TEXT($array1;0)
+ARRAY LONGINT($itemRefs2;0)
+LIST TO ARRAY("synthText";$array1;$itemRefs2)
 // overload 0 union-sweep list=Text
-ARRAY TEXT($arr3;0)
-ARRAY LONGINT($arr4;0)
-LIST TO ARRAY("synthText";$arr3;$arr4)
+ARRAY TEXT($array3;0)
+ARRAY LONGINT($itemRefs4;0)
+LIST TO ARRAY("synthText";$array3;$itemRefs4)
 // overload 0 union-sweep list=Integer
-ARRAY TEXT($arr5;0)
-ARRAY LONGINT($arr6;0)
-LIST TO ARRAY(1;$arr5;$arr6)
+ARRAY TEXT($array5;0)
+ARRAY LONGINT($itemRefs6;0)
+LIST TO ARRAY(1;$array5;$itemRefs6)

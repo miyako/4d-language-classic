@@ -1,10 +1,10 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
+var $blobToDecrypt1 : Variant
+var $decryptedBLOB2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=Decrypt data BLOB($v1;New object;1;$v2)
+$synthResult3:=Decrypt data BLOB($blobToDecrypt1;New object;1;$decryptedBLOB2)
 // overload 1
-var $v4 : Variant
-var $v5 : Variant
+var $blobToDecrypt4 : Variant
+var $decryptedBLOB5 : Variant
 var $synthResult6 : Variant
-$synthResult6:=Decrypt data BLOB($v4;"synthText";1;$v5)
+$synthResult6:=Decrypt data BLOB($blobToDecrypt4;"synthText";1;$decryptedBLOB5)

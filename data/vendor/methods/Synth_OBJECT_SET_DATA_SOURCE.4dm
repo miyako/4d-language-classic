@@ -1,7 +1,7 @@
 // overload 0
-var $v1 : Pointer
-OBJECT SET DATA SOURCE(*;"synthText";$v1)
+var $dataSource1 : Pointer
+OBJECT SET DATA SOURCE(*;"synthText";$dataSource1)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v2 : Variant
-var $v3 : Pointer
-OBJECT SET DATA SOURCE($v2;$v3)
+var $object2 : Variant
+var $dataSource3 : Pointer
+OBJECT SET DATA SOURCE($object2;$dataSource3)

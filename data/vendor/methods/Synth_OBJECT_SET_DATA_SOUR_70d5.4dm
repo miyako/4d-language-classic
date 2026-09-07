@@ -1,7 +1,7 @@
 // overload 0
-var $v1 : Variant
-OBJECT SET DATA SOURCE FORMULA(*;"synthText";$v1)
+var $formula1 : Variant
+OBJECT SET DATA SOURCE FORMULA(*;"synthText";$formula1)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v2 : Variant
-var $v3 : Variant
-OBJECT SET DATA SOURCE FORMULA($v2;$v3)
+var $object2 : Variant
+var $formula3 : Variant
+OBJECT SET DATA SOURCE FORMULA($object2;$formula3)

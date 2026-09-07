@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Picture
-SET PICTURE FILE NAME($v1;"synthText")
+var $picture1 : Picture
+SET PICTURE FILE NAME($picture1;"synthText")

@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-RECEIVE VARIABLE($v1)
+var $variable1 : Variant
+RECEIVE VARIABLE($variable1)

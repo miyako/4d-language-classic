@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-SAVE VARIABLES("synthText";$v1;$v2)
+var $variable1 : Variant
+var $variable2 : Variant
+SAVE VARIABLES("synthText";$variable1;$variable2)

@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-var $v3 : Variant
-var $v4 : Variant
-GET PROCESS VARIABLE(1;$v1;$v2;$v3;$v4)
+var $srcVar1 : Variant
+var $dstVar2 : Variant
+var $srcVar3 : Variant
+var $dstVar4 : Variant
+GET PROCESS VARIABLE(1;$srcVar1;$dstVar2;$srcVar3;$dstVar4)

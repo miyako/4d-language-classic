@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Text
-var $v3 : Pointer
-GET QUERY DESTINATION($v1;$v2;$v3)
+var $destinationType1 : Integer
+var $destinationObject2 : Text
+var $destinationPtr3 : Pointer
+GET QUERY DESTINATION($destinationType1;$destinationObject2;$destinationPtr3)

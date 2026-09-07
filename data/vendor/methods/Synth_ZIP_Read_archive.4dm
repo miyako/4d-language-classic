@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Variant
+var $zipFile1 : Variant
 var $synthResult2 : Variant
-$synthResult2:=ZIP Read archive($v1;"synthText")
+$synthResult2:=ZIP Read archive($zipFile1;"synthText")

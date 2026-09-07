@@ -1,7 +1,7 @@
 // overload 0
-var $v1 : Pointer
-LISTBOX SET ARRAY(*;"synthText";1;$v1)
+var $arrPtr1 : Pointer
+LISTBOX SET ARRAY(*;"synthText";1;$arrPtr1)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v2 : Variant
-var $v3 : Pointer
-LISTBOX SET ARRAY($v2;1;$v3)
+var $object2 : Variant
+var $arrPtr3 : Pointer
+LISTBOX SET ARRAY($object2;1;$arrPtr3)

@@ -1,8 +1,8 @@
 // overload 0
 OBJECT SET RGB COLORS(*;"synthText";"synthText";"synthText";"synthText")
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v1 : Variant
-OBJECT SET RGB COLORS($v1;1;1;1)
+var $object1 : Variant
+OBJECT SET RGB COLORS($object1;1;1;1)
 // overload 0 union-sweep foregroundColor=Text
 OBJECT SET RGB COLORS(*;"synthText";"synthText";"synthText";"synthText")
 // overload 0 union-sweep foregroundColor=Integer

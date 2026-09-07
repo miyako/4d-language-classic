@@ -1,6 +1,6 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-GET TEXT KEYWORDS("synthText";$arr1;*)
+ARRAY TEXT($arrKeywords1;0)
+GET TEXT KEYWORDS("synthText";$arrKeywords1;*)
 // overload 0 flag-sweep omit-trailing-from:*
-ARRAY TEXT($arr2;0)
-GET TEXT KEYWORDS("synthText";$arr2)
+ARRAY TEXT($arrKeywords2;0)
+GET TEXT KEYWORDS("synthText";$arrKeywords2)

@@ -1,45 +1,45 @@
 // overload 0
-var $v1 : Text
-var $v2 : Text
-LISTBOX GET GRID COLORS(*;"synthText";$v1;$v2)
+var $hColor1 : Text
+var $vColor2 : Text
+LISTBOX GET GRID COLORS(*;"synthText";$hColor1;$vColor2)
 // overload 0 union-sweep hColor=Text
-var $v3 : Text
-var $v4 : Text
-LISTBOX GET GRID COLORS(*;"synthText";$v3;$v4)
+var $hColor3 : Text
+var $vColor4 : Text
+LISTBOX GET GRID COLORS(*;"synthText";$hColor3;$vColor4)
 // overload 0 union-sweep hColor=Integer
-var $v5 : Integer
-var $v6 : Text
-LISTBOX GET GRID COLORS(*;"synthText";$v5;$v6)
+var $hColor5 : Integer
+var $vColor6 : Text
+LISTBOX GET GRID COLORS(*;"synthText";$hColor5;$vColor6)
 // overload 0 union-sweep vColor=Text
-var $v7 : Text
-var $v8 : Text
-LISTBOX GET GRID COLORS(*;"synthText";$v7;$v8)
+var $hColor7 : Text
+var $vColor8 : Text
+LISTBOX GET GRID COLORS(*;"synthText";$hColor7;$vColor8)
 // overload 0 union-sweep vColor=Integer
-var $v9 : Text
-var $v10 : Integer
-LISTBOX GET GRID COLORS(*;"synthText";$v9;$v10)
+var $hColor9 : Text
+var $vColor10 : Integer
+LISTBOX GET GRID COLORS(*;"synthText";$hColor9;$vColor10)
 // overload 1
-var $v11 : Variant
-var $v12 : Text
-var $v13 : Text
-LISTBOX GET GRID COLORS($v11;$v12;$v13)
+var $object11 : Variant
+var $hColor12 : Text
+var $vColor13 : Text
+LISTBOX GET GRID COLORS($object11;$hColor12;$vColor13)
 // overload 1 union-sweep hColor=Text
-var $v14 : Variant
-var $v15 : Text
-var $v16 : Text
-LISTBOX GET GRID COLORS($v14;$v15;$v16)
+var $object14 : Variant
+var $hColor15 : Text
+var $vColor16 : Text
+LISTBOX GET GRID COLORS($object14;$hColor15;$vColor16)
 // overload 1 union-sweep hColor=Integer
-var $v17 : Variant
-var $v18 : Integer
-var $v19 : Text
-LISTBOX GET GRID COLORS($v17;$v18;$v19)
+var $object17 : Variant
+var $hColor18 : Integer
+var $vColor19 : Text
+LISTBOX GET GRID COLORS($object17;$hColor18;$vColor19)
 // overload 1 union-sweep vColor=Text
-var $v20 : Variant
-var $v21 : Text
-var $v22 : Text
-LISTBOX GET GRID COLORS($v20;$v21;$v22)
+var $object20 : Variant
+var $hColor21 : Text
+var $vColor22 : Text
+LISTBOX GET GRID COLORS($object20;$hColor21;$vColor22)
 // overload 1 union-sweep vColor=Integer
-var $v23 : Variant
-var $v24 : Text
-var $v25 : Integer
-LISTBOX GET GRID COLORS($v23;$v24;$v25)
+var $object23 : Variant
+var $hColor24 : Text
+var $vColor25 : Integer
+LISTBOX GET GRID COLORS($object23;$hColor24;$vColor25)

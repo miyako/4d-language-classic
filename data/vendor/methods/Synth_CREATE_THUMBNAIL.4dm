@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Picture
-var $v2 : Picture
-CREATE THUMBNAIL($v1;$v2;1;1;1;1)
+var $source1 : Picture
+var $dest2 : Picture
+CREATE THUMBNAIL($source1;$dest2;1;1;1;1)

@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Picture
-SVG EXPORT TO PICTURE("synthText";$v1;1)
+var $pictVar1 : Picture
+SVG EXPORT TO PICTURE("synthText";$pictVar1;1)

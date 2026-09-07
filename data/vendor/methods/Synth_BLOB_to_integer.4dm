@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
+var $blob1 : Variant
+var $offset2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=BLOB to integer($v1;1;$v2)
+$synthResult3:=BLOB to integer($blob1;1;$offset2)

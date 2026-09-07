@@ -1,24 +1,24 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Text
-var $v3 : Integer
-var $v4 : Boolean
-GET LIST ITEM(*;"synthText";1;$v1;$v2;$v3;$v4)
+var $itemRef1 : Integer
+var $itemText2 : Text
+var $sublist3 : Integer
+var $expanded4 : Boolean
+GET LIST ITEM(*;"synthText";1;$itemRef1;$itemText2;$sublist3;$expanded4)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v5 : Integer
-var $v6 : Text
-var $v7 : Integer
-var $v8 : Boolean
-GET LIST ITEM(1;1;$v5;$v6;$v7;$v8)
+var $itemRef5 : Integer
+var $itemText6 : Text
+var $sublist7 : Integer
+var $expanded8 : Boolean
+GET LIST ITEM(1;1;$itemRef5;$itemText6;$sublist7;$expanded8)
 // overload 0 union-sweep itemPos=Integer
-var $v9 : Integer
-var $v10 : Text
-var $v11 : Integer
-var $v12 : Boolean
-GET LIST ITEM(*;"synthText";1;$v9;$v10;$v11;$v12)
+var $itemRef9 : Integer
+var $itemText10 : Text
+var $sublist11 : Integer
+var $expanded12 : Boolean
+GET LIST ITEM(*;"synthText";1;$itemRef9;$itemText10;$sublist11;$expanded12)
 // overload 0 union-sweep itemPos=pseudo:Operator
-var $v13 : Integer
-var $v14 : Text
-var $v15 : Integer
-var $v16 : Boolean
-GET LIST ITEM(*;"synthText";*;$v13;$v14;$v15;$v16)
+var $itemRef13 : Integer
+var $itemText14 : Text
+var $sublist15 : Integer
+var $expanded16 : Boolean
+GET LIST ITEM(*;"synthText";*;$itemRef13;$itemText14;$sublist15;$expanded16)

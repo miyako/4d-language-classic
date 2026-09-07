@@ -2,6 +2,6 @@
 var $synthResult1 : Variant
 $synthResult1:=OBJECT Get list name(*;"synthText";1)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v2 : Variant
+var $object2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=OBJECT Get list name($v2;1)
+$synthResult3:=OBJECT Get list name($object2;1)

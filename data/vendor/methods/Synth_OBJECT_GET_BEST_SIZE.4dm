@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-OBJECT GET BEST SIZE(*;"synthText";$v1;$v2;1)
+var $bestWidth1 : Integer
+var $bestHeight2 : Integer
+OBJECT GET BEST SIZE(*;"synthText";$bestWidth1;$bestHeight2;1)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v3 : Variant
-var $v4 : Integer
-var $v5 : Integer
-OBJECT GET BEST SIZE($v3;$v4;$v5;1)
+var $object3 : Variant
+var $bestWidth4 : Integer
+var $bestHeight5 : Integer
+OBJECT GET BEST SIZE($object3;$bestWidth4;$bestHeight5;1)

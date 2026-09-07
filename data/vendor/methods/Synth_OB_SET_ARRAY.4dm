@@ -1,9 +1,9 @@
 // overload 0
-ARRAY LONGINT($arr1;0)
-OB SET ARRAY(New object;"synthText";$arr1)
+ARRAY LONGINT($array1;0)
+OB SET ARRAY(New object;"synthText";$array1)
 // overload 0 union-sweep array=Array
-ARRAY LONGINT($arr2;0)
-OB SET ARRAY(New object;"synthText";$arr2)
+ARRAY LONGINT($array2;0)
+OB SET ARRAY(New object;"synthText";$array2)
 // overload 0 union-sweep array=Variable
-var $v3 : Variant
-OB SET ARRAY(New object;"synthText";$v3)
+var $array3 : Variant
+OB SET ARRAY(New object;"synthText";$array3)
