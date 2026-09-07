@@ -1,0 +1,2 @@
+// overload 0
+QR DELETE OFFSCREEN AREA(1)

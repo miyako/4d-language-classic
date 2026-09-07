@@ -1,0 +1,4 @@
+// overload 0
+REMOVE PICTURE FROM LIBRARY(1)
+// overload 1
+REMOVE PICTURE FROM LIBRARY("synthText")

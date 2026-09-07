@@ -1,0 +1,3 @@
+// overload 0
+ARRAY TEXT($arr1;0)
+GET MISSING TABLE NAMES($arr1)

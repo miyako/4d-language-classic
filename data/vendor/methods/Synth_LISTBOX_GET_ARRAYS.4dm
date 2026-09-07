@@ -1,0 +1,21 @@
+// overload 0
+ARRAY TEXT($arr1;0)
+ARRAY TEXT($arr2;0)
+ARRAY POINTER($arr3;0)
+ARRAY POINTER($arr4;0)
+ARRAY BOOLEAN($arr5;0)
+ARRAY POINTER($arr6;0)
+ARRAY TEXT($arr7;0)
+ARRAY POINTER($arr8;0)
+LISTBOX GET ARRAYS(*;"synthText";$arr1;$arr2;$arr3;$arr4;$arr5;$arr6;$arr7;$arr8)
+// overload 1
+var $v9 : Variant
+ARRAY TEXT($arr10;0)
+ARRAY TEXT($arr11;0)
+ARRAY POINTER($arr12;0)
+ARRAY POINTER($arr13;0)
+ARRAY BOOLEAN($arr14;0)
+ARRAY POINTER($arr15;0)
+ARRAY TEXT($arr16;0)
+ARRAY POINTER($arr17;0)
+LISTBOX GET ARRAYS($v9;$arr10;$arr11;$arr12;$arr13;$arr14;$arr15;$arr16;$arr17)

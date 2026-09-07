@@ -1,0 +1,2 @@
+// overload 0
+QR SET TOTALS SPACING(1;1;1)
