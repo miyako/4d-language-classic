@@ -1,0 +1,3 @@
+// overload 0
+ARRAY INTEGER($arr1;0)
+SELECT LIST ITEMS BY REFERENCE(1;1;$arr1)

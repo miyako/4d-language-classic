@@ -1,0 +1,2 @@
+// overload 0
+SET DOCUMENT POSITION(?00:00:00?;1;1)

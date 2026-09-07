@@ -1,0 +1,2 @@
+// overload 0
+SET DEFAULT CENTURY(1;1)

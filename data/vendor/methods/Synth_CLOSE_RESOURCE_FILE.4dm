@@ -1,0 +1,2 @@
+// overload 0
+CLOSE RESOURCE FILE(?00:00:00?)

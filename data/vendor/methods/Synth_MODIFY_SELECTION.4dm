@@ -1,0 +1,10 @@
+// overload 0
+MODIFY SELECTION([SynthTable];1;True;*;*)
+// overload 0 flag-sweep omit-leading-thru:* (first)
+MODIFY SELECTION(*)
+// overload 0 flag-sweep omit-trailing-from:* (first)
+MODIFY SELECTION([SynthTable];1;True)
+// overload 0 flag-sweep omit-leading-thru:* (second)
+MODIFY SELECTION()
+// overload 0 flag-sweep omit-trailing-from:* (second)
+MODIFY SELECTION([SynthTable];1;True;*)

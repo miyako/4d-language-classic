@@ -1,0 +1,6 @@
+// overload 0
+ARRAY INTEGER($arr1;0)
+SELECT LIST ITEMS BY POSITION(*;"synthText";1;$arr1)
+// overload 1
+ARRAY INTEGER($arr2;0)
+SELECT LIST ITEMS BY POSITION(1;1;$arr2)

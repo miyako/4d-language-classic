@@ -1,0 +1,2 @@
+// overload 0
+VALIDATE TRANSACTION()
