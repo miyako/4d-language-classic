@@ -11,9 +11,18 @@ pub struct ExampleInfo {
     pub provenance: Option<&'static str>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub raw: Option<&'static str>,
+    /// Explicit, machine-readable warning that `raw`'s literal-looking
+    /// tokens (e.g. `"synthText"`, `$synthResult1`, `[SynthTable]`) are
+    /// auto-generated placeholders, not required syntax to copy verbatim.
+    /// Kept as its own field (rather than folded into `provenance`'s prose)
+    /// so a caller can reliably detect/surface it without string-parsing.
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub placeholder_note: Option<&'static str>,
 }
 
 const PROVENANCE: &str = "compiler-verified synthetic example (tool4d check-syntax via the 4d-static-docs pipeline's stage 6); raw text, not idiomatic hand-written code";
+
+const PLACEHOLDER_NOTE: &str = "Tokens such as \"synthText\", $synthResult1/$arr1/$v1, and [SynthTable] in `raw` are auto-generated placeholder literals, variable names, and table references -- substitute your own values, variable names, and table/field references when adapting this example; do not copy them verbatim.";
 
 #[derive(Debug, Serialize)]
 pub struct LookupResult {
@@ -42,11 +51,13 @@ pub fn build_result(record: &CommandRecord, score: f32) -> LookupResult {
             available: true,
             provenance: Some(PROVENANCE),
             raw: Some(raw),
+            placeholder_note: Some(PLACEHOLDER_NOTE),
         },
         None => ExampleInfo {
             available: false,
             provenance: None,
             raw: None,
+            placeholder_note: None,
         },
     };
 

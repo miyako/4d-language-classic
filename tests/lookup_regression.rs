@@ -136,5 +136,9 @@ fn known_commands_have_verified_examples() {
             "expected a compiler-verified example for {id}"
         );
         assert!(hit.example.raw.as_ref().is_some_and(|s| !s.is_empty()));
+        assert!(
+            hit.example.placeholder_note.is_some(),
+            "expected {id}'s available example to include a placeholder_note warning callers not to copy synthetic tokens verbatim"
+        );
     }
 }
