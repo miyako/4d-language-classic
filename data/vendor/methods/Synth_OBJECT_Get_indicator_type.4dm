@@ -2,6 +2,6 @@
 var $synthResult1 : Variant
 $synthResult1:=OBJECT Get indicator type(*;"synthText")
 // overload 0 flag-sweep omit-leading-thru:*
-var $v2 : Variant
+var $object2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=OBJECT Get indicator type($v2)
+$synthResult3:=OBJECT Get indicator type($object2)

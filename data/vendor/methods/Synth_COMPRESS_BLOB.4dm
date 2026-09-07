@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-COMPRESS BLOB($v1;1)
+var $blob1 : Variant
+COMPRESS BLOB($blob1;1)

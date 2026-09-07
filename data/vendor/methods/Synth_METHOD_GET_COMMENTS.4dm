@@ -1,13 +1,13 @@
 // overload 0
-var $v1 : Text
-METHOD GET COMMENTS("synthText";$v1;*)
+var $comments1 : Text
+METHOD GET COMMENTS("synthText";$comments1;*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v2 : Text
-METHOD GET COMMENTS("synthText";$v2)
+var $comments2 : Text
+METHOD GET COMMENTS("synthText";$comments2)
 // overload 0 linked-union-sweep path=Text,comments=Text
-var $v3 : Text
-METHOD GET COMMENTS("synthText";$v3;*)
+var $comments3 : Text
+METHOD GET COMMENTS("synthText";$comments3;*)
 // overload 0 linked-union-sweep path=Text array,comments=Text array
-ARRAY TEXT($arr4;0)
-ARRAY TEXT($arr5;0)
-METHOD GET COMMENTS($arr4;$arr5;*)
+ARRAY TEXT($path4;0)
+ARRAY TEXT($comments5;0)
+METHOD GET COMMENTS($path4;$comments5;*)

@@ -1,3 +1,3 @@
 // overload 0
-ARRAY LONGINT($arr1;0)
-QUERY WITH ARRAY([SynthTable]label;$arr1)
+ARRAY LONGINT($array1;0)
+QUERY WITH ARRAY([SynthTable]label;$array1)

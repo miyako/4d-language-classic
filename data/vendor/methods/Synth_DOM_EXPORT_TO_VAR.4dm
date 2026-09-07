@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Text
-DOM EXPORT TO VAR("synthText";$v1)
+var $vXmlVar1 : Text
+DOM EXPORT TO VAR("synthText";$vXmlVar1)
 // overload 0 union-sweep vXmlVar=Text
-var $v2 : Text
-DOM EXPORT TO VAR("synthText";$v2)
+var $vXmlVar2 : Text
+DOM EXPORT TO VAR("synthText";$vXmlVar2)
 // overload 0 union-sweep vXmlVar=Blob
-var $v3 : Variant
-DOM EXPORT TO VAR("synthText";$v3)
+var $vXmlVar3 : Variant
+DOM EXPORT TO VAR("synthText";$vXmlVar3)

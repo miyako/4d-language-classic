@@ -1,23 +1,23 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Integer
-var $v3 : Integer
-GET HIGHLIGHT(*;$v1;$v2;$v3)
+var $object1 : Variant
+var $startSel2 : Integer
+var $endSel3 : Integer
+GET HIGHLIGHT(*;$object1;$startSel2;$endSel3)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v4 : Variant
-var $v5 : Integer
-var $v6 : Integer
-GET HIGHLIGHT($v4;$v5;$v6)
+var $object4 : Variant
+var $startSel5 : Integer
+var $endSel6 : Integer
+GET HIGHLIGHT($object4;$startSel5;$endSel6)
 // overload 0 union-sweep object=Variable
-var $v7 : Variant
-var $v8 : Integer
-var $v9 : Integer
-GET HIGHLIGHT(*;$v7;$v8;$v9)
+var $object7 : Variant
+var $startSel8 : Integer
+var $endSel9 : Integer
+GET HIGHLIGHT(*;$object7;$startSel8;$endSel9)
 // overload 0 union-sweep object=Field
-var $v10 : Integer
-var $v11 : Integer
-GET HIGHLIGHT(*;[SynthTable]label;$v10;$v11)
+var $startSel10 : Integer
+var $endSel11 : Integer
+GET HIGHLIGHT(*;[SynthTable]label;$startSel10;$endSel11)
 // overload 0 union-sweep object=pseudo:any
-var $v12 : Integer
-var $v13 : Integer
-GET HIGHLIGHT(*;"synthAny";$v12;$v13)
+var $startSel12 : Integer
+var $endSel13 : Integer
+GET HIGHLIGHT(*;"synthAny";$startSel12;$endSel13)

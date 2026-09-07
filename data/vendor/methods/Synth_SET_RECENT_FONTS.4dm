@@ -1,3 +1,3 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-SET RECENT FONTS($arr1)
+ARRAY TEXT($fontsArray1;0)
+SET RECENT FONTS($fontsArray1)

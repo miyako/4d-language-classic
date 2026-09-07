@@ -1,8 +1,8 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-REAL TO BLOB(1;$v1;1;$v2)
+var $blob1 : Variant
+var $offset2 : Variant
+REAL TO BLOB(1;$blob1;1;$offset2)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v3 : Variant
-var $v4 : Variant
-REAL TO BLOB(1;$v3;1;$v4)
+var $blob3 : Variant
+var $offset4 : Variant
+REAL TO BLOB(1;$blob3;1;$offset4)

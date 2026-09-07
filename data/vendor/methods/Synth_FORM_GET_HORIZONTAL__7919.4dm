@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Boolean
-var $v2 : Integer
-var $v3 : Integer
-FORM GET HORIZONTAL RESIZING($v1;$v2;$v3)
+var $resize1 : Boolean
+var $minWidth2 : Integer
+var $maxWidth3 : Integer
+FORM GET HORIZONTAL RESIZING($resize1;$minWidth2;$maxWidth3)

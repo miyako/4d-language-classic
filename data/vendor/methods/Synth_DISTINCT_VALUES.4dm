@@ -1,12 +1,12 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY INTEGER($arr2;0)
-DISTINCT VALUES([SynthTable]label;$arr1;$arr2)
+ARRAY TEXT($array1;0)
+ARRAY INTEGER($countArray2;0)
+DISTINCT VALUES([SynthTable]label;$array1;$countArray2)
 // overload 0 union-sweep countArray=Integer array
-ARRAY TEXT($arr3;0)
-ARRAY INTEGER($arr4;0)
-DISTINCT VALUES([SynthTable]label;$arr3;$arr4)
+ARRAY TEXT($array3;0)
+ARRAY INTEGER($countArray4;0)
+DISTINCT VALUES([SynthTable]label;$array3;$countArray4)
 // overload 0 union-sweep countArray=Real array
-ARRAY TEXT($arr5;0)
-ARRAY REAL($arr6;0)
-DISTINCT VALUES([SynthTable]label;$arr5;$arr6)
+ARRAY TEXT($array5;0)
+ARRAY REAL($countArray6;0)
+DISTINCT VALUES([SynthTable]label;$array5;$countArray6)

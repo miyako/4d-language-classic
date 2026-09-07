@@ -5,6 +5,6 @@ METHOD SET ATTRIBUTES("synthText";New object)
 // overload 0 linked-union-sweep path=Text,attributes=Object
 METHOD SET ATTRIBUTES("synthText";New object;*)
 // overload 0 linked-union-sweep path=Text array,attributes=Object array
-ARRAY TEXT($arr1;0)
-ARRAY OBJECT($arr2;0)
-METHOD SET ATTRIBUTES($arr1;$arr2;*)
+ARRAY TEXT($path1;0)
+ARRAY OBJECT($attributes2;0)
+METHOD SET ATTRIBUTES($path1;$attributes2;*)

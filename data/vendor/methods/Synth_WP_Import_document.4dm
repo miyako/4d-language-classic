@@ -8,14 +8,14 @@ $synthResult2:=WP Import document("synthText";1)
 var $synthResult3 : Variant
 $synthResult3:=WP Import document("synthText";New object)
 // overload 1
-var $v4 : Variant
+var $fileObj4 : Variant
 var $synthResult5 : Variant
-$synthResult5:=WP Import document($v4;1)
+$synthResult5:=WP Import document($fileObj4;1)
 // overload 1 union-sweep option=Integer
-var $v6 : Variant
+var $fileObj6 : Variant
 var $synthResult7 : Variant
-$synthResult7:=WP Import document($v6;1)
+$synthResult7:=WP Import document($fileObj6;1)
 // overload 1 union-sweep option=Object
-var $v8 : Variant
+var $fileObj8 : Variant
 var $synthResult9 : Variant
-$synthResult9:=WP Import document($v8;New object)
+$synthResult9:=WP Import document($fileObj8;New object)

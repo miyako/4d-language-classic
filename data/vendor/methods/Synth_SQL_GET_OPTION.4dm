@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Integer
-SQL GET OPTION(1;$v1)
+var $value1 : Integer
+SQL GET OPTION(1;$value1)
 // overload 0 union-sweep value=Integer
-var $v2 : Integer
-SQL GET OPTION(1;$v2)
+var $value2 : Integer
+SQL GET OPTION(1;$value2)
 // overload 0 union-sweep value=Text
-var $v3 : Text
-SQL GET OPTION(1;$v3)
+var $value3 : Text
+SQL GET OPTION(1;$value3)

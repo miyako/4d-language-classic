@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Picture
-GET DOCUMENT ICON("synthText";$v1;1)
+var $icon1 : Picture
+GET DOCUMENT ICON("synthText";$icon1;1)

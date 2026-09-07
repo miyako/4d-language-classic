@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Variant
-WEB SERVICE GET RESULT($v1;"synthText";*)
+var $returnValue1 : Variant
+WEB SERVICE GET RESULT($returnValue1;"synthText";*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v2 : Variant
-WEB SERVICE GET RESULT($v2;"synthText")
+var $returnValue2 : Variant
+WEB SERVICE GET RESULT($returnValue2;"synthText")

@@ -1,18 +1,18 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Text
-var $v3 : Text
-var $v4 : Text
-WEB GET BODY PART(1;$v1;$v2;$v3;$v4)
+var $contents1 : Variant
+var $name2 : Text
+var $mimeType3 : Text
+var $fileName4 : Text
+WEB GET BODY PART(1;$contents1;$name2;$mimeType3;$fileName4)
 // overload 0 union-sweep contents=Blob
-var $v5 : Variant
-var $v6 : Text
-var $v7 : Text
-var $v8 : Text
-WEB GET BODY PART(1;$v5;$v6;$v7;$v8)
+var $contents5 : Variant
+var $name6 : Text
+var $mimeType7 : Text
+var $fileName8 : Text
+WEB GET BODY PART(1;$contents5;$name6;$mimeType7;$fileName8)
 // overload 0 union-sweep contents=Text
-var $v9 : Text
-var $v10 : Text
-var $v11 : Text
-var $v12 : Text
-WEB GET BODY PART(1;$v9;$v10;$v11;$v12)
+var $contents9 : Text
+var $name10 : Text
+var $mimeType11 : Text
+var $fileName12 : Text
+WEB GET BODY PART(1;$contents9;$name10;$mimeType11;$fileName12)

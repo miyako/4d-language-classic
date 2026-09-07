@@ -1,50 +1,50 @@
 // overload 0
-ARRAY LONGINT($arr1;0)
-var $v2 : Integer
-var $v3 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$arr1;"synthText";$v2;"synthText";$v3)
+ARRAY LONGINT($colVariable1;0)
+var $headerVar2 : Integer
+var $footerVar3 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable1;"synthText";$headerVar2;"synthText";$footerVar3)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v4 : Variant
-ARRAY LONGINT($arr5;0)
-var $v6 : Integer
-var $v7 : Variant
-LISTBOX INSERT COLUMN($v4;1;"synthText";$arr5;"synthText";$v6;"synthText";$v7)
+var $object4 : Variant
+ARRAY LONGINT($colVariable5;0)
+var $headerVar6 : Integer
+var $footerVar7 : Variant
+LISTBOX INSERT COLUMN($object4;1;"synthText";$colVariable5;"synthText";$headerVar6;"synthText";$footerVar7)
 // overload 0 union-sweep colVariable=Array
-ARRAY LONGINT($arr8;0)
-var $v9 : Integer
-var $v10 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$arr8;"synthText";$v9;"synthText";$v10)
+ARRAY LONGINT($colVariable8;0)
+var $headerVar9 : Integer
+var $footerVar10 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable8;"synthText";$headerVar9;"synthText";$footerVar10)
 // overload 0 union-sweep colVariable=Field
-var $v11 : Integer
-var $v12 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";[SynthTable]label;"synthText";$v11;"synthText";$v12)
+var $headerVar11 : Integer
+var $footerVar12 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";[SynthTable]label;"synthText";$headerVar11;"synthText";$footerVar12)
 // overload 0 union-sweep colVariable=Variable
-var $v13 : Variant
-var $v14 : Integer
-var $v15 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$v13;"synthText";$v14;"synthText";$v15)
+var $colVariable13 : Variant
+var $headerVar14 : Integer
+var $footerVar15 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable13;"synthText";$headerVar14;"synthText";$footerVar15)
 // overload 0 union-sweep colVariable=Pointer
-var $v16 : Pointer
-var $v17 : Integer
-var $v18 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$v16;"synthText";$v17;"synthText";$v18)
+var $colVariable16 : Pointer
+var $headerVar17 : Integer
+var $footerVar18 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable16;"synthText";$headerVar17;"synthText";$footerVar18)
 // overload 0 union-sweep headerVar=Integer
-ARRAY LONGINT($arr19;0)
-var $v20 : Integer
-var $v21 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$arr19;"synthText";$v20;"synthText";$v21)
+ARRAY LONGINT($colVariable19;0)
+var $headerVar20 : Integer
+var $footerVar21 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable19;"synthText";$headerVar20;"synthText";$footerVar21)
 // overload 0 union-sweep headerVar=Pointer
-ARRAY LONGINT($arr22;0)
-var $v23 : Pointer
-var $v24 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$arr22;"synthText";$v23;"synthText";$v24)
+ARRAY LONGINT($colVariable22;0)
+var $headerVar23 : Pointer
+var $footerVar24 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable22;"synthText";$headerVar23;"synthText";$footerVar24)
 // overload 0 union-sweep footerVar=Variable
-ARRAY LONGINT($arr25;0)
-var $v26 : Integer
-var $v27 : Variant
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$arr25;"synthText";$v26;"synthText";$v27)
+ARRAY LONGINT($colVariable25;0)
+var $headerVar26 : Integer
+var $footerVar27 : Variant
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable25;"synthText";$headerVar26;"synthText";$footerVar27)
 // overload 0 union-sweep footerVar=Pointer
-ARRAY LONGINT($arr28;0)
-var $v29 : Integer
-var $v30 : Pointer
-LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$arr28;"synthText";$v29;"synthText";$v30)
+ARRAY LONGINT($colVariable28;0)
+var $headerVar29 : Integer
+var $footerVar30 : Pointer
+LISTBOX INSERT COLUMN(*;"synthText";1;"synthText";$colVariable28;"synthText";$headerVar29;"synthText";$footerVar30)

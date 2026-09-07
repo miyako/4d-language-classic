@@ -1,10 +1,10 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-LONGINT TO BLOB(1;$v1;1;$v2)
+var $blob1 : Variant
+var $offset2 : Variant
+LONGINT TO BLOB(1;$blob1;1;$offset2)
 // overload 1
-var $v3 : Variant
-LONGINT TO BLOB(1;$v3;1;*)
+var $blob3 : Variant
+LONGINT TO BLOB(1;$blob3;1;*)
 // overload 1 flag-sweep omit-trailing-from:*
-var $v4 : Variant
-LONGINT TO BLOB(1;$v4;1)
+var $blob4 : Variant
+LONGINT TO BLOB(1;$blob4;1)

@@ -1,10 +1,10 @@
 // overload 0
-var $v1 : Pointer
-OBJECT DUPLICATE(*;"synthText";"synthText";$v1;"synthText";1;1;1;1;*)
+var $newVar1 : Pointer
+OBJECT DUPLICATE(*;"synthText";"synthText";$newVar1;"synthText";1;1;1;1;*)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v2 : Variant
-var $v3 : Pointer
-OBJECT DUPLICATE($v2;"synthText";$v3;"synthText";1;1;1;1;*)
+var $object2 : Variant
+var $newVar3 : Pointer
+OBJECT DUPLICATE($object2;"synthText";$newVar3;"synthText";1;1;1;1;*)
 // overload 0 flag-sweep omit-trailing-from:useAbsoluteCoordinates
-var $v4 : Pointer
-OBJECT DUPLICATE(*;"synthText";"synthText";$v4;"synthText";1;1;1;1)
+var $newVar4 : Pointer
+OBJECT DUPLICATE(*;"synthText";"synthText";$newVar4;"synthText";1;1;1;1)

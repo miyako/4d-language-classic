@@ -1,2 +1,2 @@
 // overload 0
-ARRAY TEXT($arr1;1;1)
+ARRAY TEXT($arrayName1;1;1)

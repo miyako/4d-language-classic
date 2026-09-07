@@ -97,14 +97,25 @@ syntax contract: param names/types/optionality/directions, `returns`,
   "example": {
     "available": true,
     "provenance": "compiler-verified synthetic example (tool4d check-syntax via the 4d-static-docs pipeline's stage 6); raw text, not idiomatic hand-written code",
-    "raw": "// overload 0\nvar $synthResult1 : Variant\n$synthResult1:=JSON Parse(\"synthText\";1;*)\n..."
+    "raw": "// overload 0\nvar $synthResult1 : Variant\n$synthResult1:=JSON Parse(\"synthText\";1;*)\n...",
+    "placeholder_note": "Tokens such as \"synthText\", $synthResult1/$arr1/$v1, and [SynthTable] in `raw` are auto-generated placeholder literals, variable names, and table references -- substitute your own values, variable names, and table/field references when adapting this example; do not copy them verbatim."
   }
 }
 ```
 
-`example.available` is `false` (with no `raw` field) for the 122
-`4D-View-Pro`-themed commands, which have no compiler-verified example in
-the upstream corpus.
+`example.available` is `false` (with no `raw`/`placeholder_note` fields) for
+the 122 `4D-View-Pro`-themed commands, which have no compiler-verified
+example in the upstream corpus.
+
+**Important**: `raw` is a literal synthetic method body generated to
+exercise every parameter combination for `tool4d`'s compiler check, not
+idiomatic hand-written code. Its literal-looking tokens (`"synthText"`,
+`$synthResult1`, `$arr1`, `[SynthTable]`, etc.) are auto-generated
+placeholders -- callers (including code agents) should substitute their own
+values, variable names, and table/field references rather than copying
+these tokens verbatim. This is surfaced both as `example.placeholder_note`
+(machine-readable) and inline in the CLI's text-mode output.
+
 
 ## How matching works
 

@@ -1,4 +1,4 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY TEXT($arr2;0)
-SQL GET DATA SOURCE LIST(1;$arr1;$arr2)
+ARRAY TEXT($sourceNamesArr1;0)
+ARRAY TEXT($driversArr2;0)
+SQL GET DATA SOURCE LIST(1;$sourceNamesArr1;$driversArr2)

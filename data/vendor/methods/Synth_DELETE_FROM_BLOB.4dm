@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-DELETE FROM BLOB($v1;1;1)
+var $blob1 : Variant
+DELETE FROM BLOB($blob1;1;1)

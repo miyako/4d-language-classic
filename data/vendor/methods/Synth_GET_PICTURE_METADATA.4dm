@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Picture
-var $v2 : Variant
-var $v3 : Variant
-GET PICTURE METADATA($v1;"synthText";$v2;"synthText";$v3)
+var $picture1 : Picture
+var $metaContents2 : Variant
+var $metaContents3 : Variant
+GET PICTURE METADATA($picture1;"synthText";$metaContents2;"synthText";$metaContents3)

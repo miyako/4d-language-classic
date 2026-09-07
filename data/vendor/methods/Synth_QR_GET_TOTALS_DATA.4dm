@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Text
-QR GET TOTALS DATA(1;1;1;$v1;$v2)
+var $operator1 : Integer
+var $text2 : Text
+QR GET TOTALS DATA(1;1;1;$operator1;$text2)

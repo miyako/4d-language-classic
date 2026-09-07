@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Real
-var $v2 : Real
-var $v3 : Real
-VOLUME ATTRIBUTES("synthText";$v1;$v2;$v3)
+var $size1 : Real
+var $used2 : Real
+var $free3 : Real
+VOLUME ATTRIBUTES("synthText";$size1;$used2;$free3)

@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-var $v3 : Integer
-BLOB TO VARIABLE($v1;$v2;$v3)
+var $blob1 : Variant
+var $variable2 : Variant
+var $offset3 : Integer
+BLOB TO VARIABLE($blob1;$variable2;$offset3)

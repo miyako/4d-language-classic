@@ -1,9 +1,9 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY TEXT($arr2;0)
-WA GET URL HISTORY(*;"synthText";$arr1;1;$arr2)
+ARRAY TEXT($urlsArr1;0)
+ARRAY TEXT($titlesArr2;0)
+WA GET URL HISTORY(*;"synthText";$urlsArr1;1;$titlesArr2)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v3 : Variant
-ARRAY TEXT($arr4;0)
-ARRAY TEXT($arr5;0)
-WA GET URL HISTORY($v3;$arr4;1;$arr5)
+var $object3 : Variant
+ARRAY TEXT($urlsArr4;0)
+ARRAY TEXT($titlesArr5;0)
+WA GET URL HISTORY($object3;$urlsArr4;1;$titlesArr5)

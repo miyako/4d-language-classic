@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-USERS TO BLOB($v1)
+var $users1 : Variant
+USERS TO BLOB($users1)

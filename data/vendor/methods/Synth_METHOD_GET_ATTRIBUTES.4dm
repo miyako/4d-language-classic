@@ -1,13 +1,13 @@
 // overload 0
-var $v1 : Object
-METHOD GET ATTRIBUTES("synthText";$v1;*)
+var $attributes1 : Object
+METHOD GET ATTRIBUTES("synthText";$attributes1;*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v2 : Object
-METHOD GET ATTRIBUTES("synthText";$v2)
+var $attributes2 : Object
+METHOD GET ATTRIBUTES("synthText";$attributes2)
 // overload 0 linked-union-sweep path=Text,attributes=Object
-var $v3 : Object
-METHOD GET ATTRIBUTES("synthText";$v3;*)
+var $attributes3 : Object
+METHOD GET ATTRIBUTES("synthText";$attributes3;*)
 // overload 0 linked-union-sweep path=Text array,attributes=Object array
-ARRAY TEXT($arr4;0)
-ARRAY OBJECT($arr5;0)
-METHOD GET ATTRIBUTES($arr4;$arr5;*)
+ARRAY TEXT($path4;0)
+ARRAY OBJECT($attributes5;0)
+METHOD GET ATTRIBUTES($path4;$attributes5;*)

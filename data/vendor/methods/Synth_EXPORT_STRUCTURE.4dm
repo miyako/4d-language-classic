@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Text
-EXPORT STRUCTURE($v1;"synthText")
+var $exportedStructure1 : Text
+EXPORT STRUCTURE($exportedStructure1;"synthText")

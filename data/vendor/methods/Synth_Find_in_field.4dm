@@ -5,6 +5,6 @@ $synthResult1:=Find in field([SynthTable]label;[SynthTable]label)
 var $synthResult2 : Variant
 $synthResult2:=Find in field([SynthTable]label;[SynthTable]label)
 // overload 0 union-sweep value=Variable
-var $v3 : Variant
+var $value3 : Variant
 var $synthResult4 : Variant
-$synthResult4:=Find in field([SynthTable]label;$v3)
+$synthResult4:=Find in field([SynthTable]label;$value3)

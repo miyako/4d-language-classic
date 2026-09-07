@@ -1,4 +1,4 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY TEXT($arr2;0)
-WEB GET VARIABLES($arr1;$arr2)
+ARRAY TEXT($nameArray1;0)
+ARRAY TEXT($valueArray2;0)
+WEB GET VARIABLES($nameArray1;$valueArray2)

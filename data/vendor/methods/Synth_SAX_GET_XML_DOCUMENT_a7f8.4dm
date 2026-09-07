@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Text
-var $v2 : Text
-var $v3 : Boolean
-SAX GET XML DOCUMENT VALUES(?00:00:00?;$v1;$v2;$v3)
+var $encoding1 : Text
+var $version2 : Text
+var $standalone3 : Boolean
+SAX GET XML DOCUMENT VALUES(?00:00:00?;$encoding1;$version2;$standalone3)

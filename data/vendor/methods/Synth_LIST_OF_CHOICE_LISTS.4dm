@@ -1,4 +1,4 @@
 // overload 0
-ARRAY INTEGER($arr1;0)
-ARRAY TEXT($arr2;0)
-LIST OF CHOICE LISTS($arr1;$arr2)
+ARRAY INTEGER($numsArray1;0)
+ARRAY TEXT($namesArray2;0)
+LIST OF CHOICE LISTS($numsArray1;$namesArray2)

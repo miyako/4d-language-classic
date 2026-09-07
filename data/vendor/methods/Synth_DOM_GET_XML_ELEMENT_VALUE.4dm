@@ -1,18 +1,18 @@
 // overload 0
-var $v1 : Variant
-var $v2 : Variant
-DOM GET XML ELEMENT VALUE("synthText";$v1;$v2)
+var $elementValue1 : Variant
+var $cDATA2 : Variant
+DOM GET XML ELEMENT VALUE("synthText";$elementValue1;$cDATA2)
 // overload 0 union-sweep elementValue=Variable
-var $v3 : Variant
-var $v4 : Variant
-DOM GET XML ELEMENT VALUE("synthText";$v3;$v4)
+var $elementValue3 : Variant
+var $cDATA4 : Variant
+DOM GET XML ELEMENT VALUE("synthText";$elementValue3;$cDATA4)
 // overload 0 union-sweep elementValue=Field
-var $v5 : Variant
-DOM GET XML ELEMENT VALUE("synthText";[SynthTable]label;$v5)
+var $cDATA5 : Variant
+DOM GET XML ELEMENT VALUE("synthText";[SynthTable]label;$cDATA5)
 // overload 0 union-sweep cDATA=Variable
-var $v6 : Variant
-var $v7 : Variant
-DOM GET XML ELEMENT VALUE("synthText";$v6;$v7)
+var $elementValue6 : Variant
+var $cDATA7 : Variant
+DOM GET XML ELEMENT VALUE("synthText";$elementValue6;$cDATA7)
 // overload 0 union-sweep cDATA=Field
-var $v8 : Variant
-DOM GET XML ELEMENT VALUE("synthText";$v8;[SynthTable]label)
+var $elementValue8 : Variant
+DOM GET XML ELEMENT VALUE("synthText";$elementValue8;[SynthTable]label)

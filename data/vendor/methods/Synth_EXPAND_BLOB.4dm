@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-EXPAND BLOB($v1)
+var $blob1 : Variant
+EXPAND BLOB($blob1)

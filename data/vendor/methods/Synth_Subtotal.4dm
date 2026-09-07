@@ -5,6 +5,6 @@ $synthResult1:=Subtotal([SynthTable]label;1)
 var $synthResult2 : Variant
 $synthResult2:=Subtotal([SynthTable]label;1)
 // overload 0 union-sweep data=Variable
-var $v3 : Variant
+var $data3 : Variant
 var $synthResult4 : Variant
-$synthResult4:=Subtotal($v3;1)
+$synthResult4:=Subtotal($data3;1)

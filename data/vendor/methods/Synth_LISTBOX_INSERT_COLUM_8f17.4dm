@@ -1,25 +1,25 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Variant
-LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$v1;"synthText";$v2)
+var $headerVar1 : Integer
+var $footerVar2 : Variant
+LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$headerVar1;"synthText";$footerVar2)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v3 : Variant
-var $v4 : Integer
-var $v5 : Variant
-LISTBOX INSERT COLUMN FORMULA($v3;1;"synthText";"synthText";1;"synthText";$v4;"synthText";$v5)
+var $object3 : Variant
+var $headerVar4 : Integer
+var $footerVar5 : Variant
+LISTBOX INSERT COLUMN FORMULA($object3;1;"synthText";"synthText";1;"synthText";$headerVar4;"synthText";$footerVar5)
 // overload 0 union-sweep headerVar=Integer
-var $v6 : Integer
-var $v7 : Variant
-LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$v6;"synthText";$v7)
+var $headerVar6 : Integer
+var $footerVar7 : Variant
+LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$headerVar6;"synthText";$footerVar7)
 // overload 0 union-sweep headerVar=Pointer
-var $v8 : Pointer
-var $v9 : Variant
-LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$v8;"synthText";$v9)
+var $headerVar8 : Pointer
+var $footerVar9 : Variant
+LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$headerVar8;"synthText";$footerVar9)
 // overload 0 union-sweep footerVar=Variable
-var $v10 : Integer
-var $v11 : Variant
-LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$v10;"synthText";$v11)
+var $headerVar10 : Integer
+var $footerVar11 : Variant
+LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$headerVar10;"synthText";$footerVar11)
 // overload 0 union-sweep footerVar=Pointer
-var $v12 : Integer
-var $v13 : Pointer
-LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$v12;"synthText";$v13)
+var $headerVar12 : Integer
+var $footerVar13 : Pointer
+LISTBOX INSERT COLUMN FORMULA(*;"synthText";1;"synthText";"synthText";1;"synthText";$headerVar12;"synthText";$footerVar13)

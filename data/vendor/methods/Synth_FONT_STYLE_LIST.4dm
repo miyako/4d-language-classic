@@ -1,4 +1,4 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY TEXT($arr2;0)
-FONT STYLE LIST("synthText";$arr1;$arr2)
+ARRAY TEXT($fontStyleList1;0)
+ARRAY TEXT($fontNameList2;0)
+FONT STYLE LIST("synthText";$fontStyleList1;$fontNameList2)

@@ -1,7 +1,7 @@
 // overload 0
-var $v1 : Boolean
-WA GET PREFERENCE(*;"synthText";1;$v1)
+var $value1 : Boolean
+WA GET PREFERENCE(*;"synthText";1;$value1)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v2 : Variant
-var $v3 : Boolean
-WA GET PREFERENCE($v2;1;$v3)
+var $object2 : Variant
+var $value3 : Boolean
+WA GET PREFERENCE($object2;1;$value3)

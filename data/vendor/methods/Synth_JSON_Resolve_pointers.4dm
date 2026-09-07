@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Object
+var $object1 : Object
 var $synthResult2 : Variant
-$synthResult2:=JSON Resolve pointers($v1;New object)
+$synthResult2:=JSON Resolve pointers($object1;New object)

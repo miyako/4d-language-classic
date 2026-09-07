@@ -1,12 +1,12 @@
 // overload 0
-var $v1 : Integer
-WEB GET OPTION(1;$v1)
+var $value1 : Integer
+WEB GET OPTION(1;$value1)
 // overload 0 union-sweep value=Integer
-var $v2 : Integer
-WEB GET OPTION(1;$v2)
+var $value2 : Integer
+WEB GET OPTION(1;$value2)
 // overload 0 union-sweep value=Text
-var $v3 : Text
-WEB GET OPTION(1;$v3)
+var $value3 : Text
+WEB GET OPTION(1;$value3)
 // overload 0 union-sweep value=Collection
-var $v4 : Collection
-WEB GET OPTION(1;$v4)
+var $value4 : Collection
+WEB GET OPTION(1;$value4)

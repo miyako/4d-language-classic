@@ -1,2 +1,2 @@
 // overload 0
-ARRAY DATE($arr1;1;1)
+ARRAY DATE($arrayName1;1;1)

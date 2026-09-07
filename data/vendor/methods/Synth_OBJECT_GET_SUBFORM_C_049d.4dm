@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-OBJECT GET SUBFORM CONTAINER SIZE($v1;$v2)
+var $width1 : Integer
+var $height2 : Integer
+OBJECT GET SUBFORM CONTAINER SIZE($width1;$height2)

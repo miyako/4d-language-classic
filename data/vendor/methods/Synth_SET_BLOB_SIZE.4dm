@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-SET BLOB SIZE($v1;1;1)
+var $blob1 : Variant
+SET BLOB SIZE($blob1;1;1)

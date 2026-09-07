@@ -2,6 +2,6 @@
 var $synthResult1 : Variant
 $synthResult1:=OBJECT Get data source formula(*;"synthText")
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v2 : Variant
+var $object2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=OBJECT Get data source formula($v2)
+$synthResult3:=OBJECT Get data source formula($object2)

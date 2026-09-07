@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Variant
-BLOB TO DOCUMENT("synthText";$v1)
+var $blob1 : Variant
+BLOB TO DOCUMENT("synthText";$blob1)

@@ -1,19 +1,19 @@
 // overload 0
-var $v1 : Variant
-PROCESS 4D TAGS("synthText";$v1;"synthAny")
+var $outputResult1 : Variant
+PROCESS 4D TAGS("synthText";$outputResult1;"synthAny")
 // overload 0 union-sweep inputTemplate=Text
-var $v2 : Variant
-PROCESS 4D TAGS("synthText";$v2;"synthAny")
+var $outputResult2 : Variant
+PROCESS 4D TAGS("synthText";$outputResult2;"synthAny")
 // overload 0 union-sweep inputTemplate=Blob
-var $v3 : Variant
-var $v4 : Variant
-PROCESS 4D TAGS($v3;$v4;"synthAny")
+var $inputTemplate3 : Variant
+var $outputResult4 : Variant
+PROCESS 4D TAGS($inputTemplate3;$outputResult4;"synthAny")
 // overload 0 union-sweep outputResult=Variable
-var $v5 : Variant
-PROCESS 4D TAGS("synthText";$v5;"synthAny")
+var $outputResult5 : Variant
+PROCESS 4D TAGS("synthText";$outputResult5;"synthAny")
 // overload 0 union-sweep outputResult=Text
-var $v6 : Text
-PROCESS 4D TAGS("synthText";$v6;"synthAny")
+var $outputResult6 : Text
+PROCESS 4D TAGS("synthText";$outputResult6;"synthAny")
 // overload 0 union-sweep outputResult=Blob
-var $v7 : Variant
-PROCESS 4D TAGS("synthText";$v7;"synthAny")
+var $outputResult7 : Variant
+PROCESS 4D TAGS("synthText";$outputResult7;"synthAny")

@@ -1,9 +1,9 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-FORM GET ENTRY ORDER($arr1;1)
+ARRAY TEXT($objectNames1;0)
+FORM GET ENTRY ORDER($objectNames1;1)
 // overload 1
-ARRAY TEXT($arr2;0)
-FORM GET ENTRY ORDER($arr2;*)
+ARRAY TEXT($objectNames2;0)
+FORM GET ENTRY ORDER($objectNames2;*)
 // overload 1 flag-sweep omit-trailing-from:*
-ARRAY TEXT($arr3;0)
-FORM GET ENTRY ORDER($arr3)
+ARRAY TEXT($objectNames3;0)
+FORM GET ENTRY ORDER($objectNames3)

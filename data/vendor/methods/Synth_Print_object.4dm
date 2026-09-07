@@ -2,6 +2,6 @@
 var $synthResult1 : Variant
 $synthResult1:=Print object(*;"synthText";1;1;1;1)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v2 : Variant
+var $object2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=Print object($v2;1;1;1;1)
+$synthResult3:=Print object($object2;1;1;1;1)

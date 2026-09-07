@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Text
-var $v2 : Text
-ST GET URL(*;"synthText";$v1;$v2;1;1)
+var $urlText1 : Text
+var $urlAddress2 : Text
+ST GET URL(*;"synthText";$urlText1;$urlAddress2;1;1)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v3 : Variant
-var $v4 : Text
-var $v5 : Text
-ST GET URL($v3;$v4;$v5;1;1)
+var $object3 : Variant
+var $urlText4 : Text
+var $urlAddress5 : Text
+ST GET URL($object3;$urlText4;$urlAddress5;1;1)

@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Picture
-SET PICTURE TO PASTEBOARD($v1)
+var $picture1 : Picture
+SET PICTURE TO PASTEBOARD($picture1)

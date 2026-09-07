@@ -1,6 +1,6 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Text
-var $v3 : Text
-var $v4 : Integer
-SQL GET LAST ERROR($v1;$v2;$v3;$v4)
+var $errCode1 : Integer
+var $errText2 : Text
+var $errODBC3 : Text
+var $errSQLServer4 : Integer
+SQL GET LAST ERROR($errCode1;$errText2;$errODBC3;$errSQLServer4)

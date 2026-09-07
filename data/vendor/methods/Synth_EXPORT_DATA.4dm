@@ -1,12 +1,12 @@
 // overload 0
-var $v1 : Variant
-EXPORT DATA("synthText";$v1;*)
+var $project1 : Variant
+EXPORT DATA("synthText";$project1;*)
 // overload 0 flag-sweep omit-trailing-from:*
-var $v2 : Variant
-EXPORT DATA("synthText";$v2)
+var $project2 : Variant
+EXPORT DATA("synthText";$project2)
 // overload 0 union-sweep project=Text
-var $v3 : Text
-EXPORT DATA("synthText";$v3;*)
+var $project3 : Text
+EXPORT DATA("synthText";$project3;*)
 // overload 0 union-sweep project=Blob
-var $v4 : Variant
-EXPORT DATA("synthText";$v4;*)
+var $project4 : Variant
+EXPORT DATA("synthText";$project4;*)

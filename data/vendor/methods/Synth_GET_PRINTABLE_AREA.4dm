@@ -1,4 +1,4 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-GET PRINTABLE AREA($v1;$v2)
+var $height1 : Integer
+var $width2 : Integer
+GET PRINTABLE AREA($height1;$width2)

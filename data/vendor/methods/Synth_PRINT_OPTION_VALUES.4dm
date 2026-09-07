@@ -1,5 +1,5 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY INTEGER($arr2;0)
-ARRAY INTEGER($arr3;0)
-PRINT OPTION VALUES(1;$arr1;$arr2;$arr3)
+ARRAY TEXT($namesArray1;0)
+ARRAY INTEGER($info1Array2;0)
+ARRAY INTEGER($info2Array3;0)
+PRINT OPTION VALUES(1;$namesArray1;$info1Array2;$info2Array3)

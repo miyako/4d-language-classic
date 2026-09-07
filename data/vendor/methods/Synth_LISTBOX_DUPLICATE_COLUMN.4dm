@@ -1,97 +1,97 @@
 // overload 0
-ARRAY LONGINT($arr1;0)
-var $v2 : Integer
-var $v3 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$arr1;"synthText";$v2;"synthText";$v3)
+ARRAY LONGINT($colVariable1;0)
+var $headerVar2 : Integer
+var $footerVar3 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable1;"synthText";$headerVar2;"synthText";$footerVar3)
 // overload 0 union-sweep colVariable=Array
-ARRAY LONGINT($arr4;0)
-var $v5 : Integer
-var $v6 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$arr4;"synthText";$v5;"synthText";$v6)
+ARRAY LONGINT($colVariable4;0)
+var $headerVar5 : Integer
+var $footerVar6 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable4;"synthText";$headerVar5;"synthText";$footerVar6)
 // overload 0 union-sweep colVariable=Field
-var $v7 : Integer
-var $v8 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";[SynthTable]label;"synthText";$v7;"synthText";$v8)
+var $headerVar7 : Integer
+var $footerVar8 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";[SynthTable]label;"synthText";$headerVar7;"synthText";$footerVar8)
 // overload 0 union-sweep colVariable=Variable
-var $v9 : Variant
-var $v10 : Integer
-var $v11 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$v9;"synthText";$v10;"synthText";$v11)
+var $colVariable9 : Variant
+var $headerVar10 : Integer
+var $footerVar11 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable9;"synthText";$headerVar10;"synthText";$footerVar11)
 // overload 0 union-sweep colVariable=Pointer
-var $v12 : Pointer
-var $v13 : Integer
-var $v14 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$v12;"synthText";$v13;"synthText";$v14)
+var $colVariable12 : Pointer
+var $headerVar13 : Integer
+var $footerVar14 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable12;"synthText";$headerVar13;"synthText";$footerVar14)
 // overload 0 union-sweep headerVar=Integer
-ARRAY LONGINT($arr15;0)
-var $v16 : Integer
-var $v17 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$arr15;"synthText";$v16;"synthText";$v17)
+ARRAY LONGINT($colVariable15;0)
+var $headerVar16 : Integer
+var $footerVar17 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable15;"synthText";$headerVar16;"synthText";$footerVar17)
 // overload 0 union-sweep headerVar=Pointer
-ARRAY LONGINT($arr18;0)
-var $v19 : Pointer
-var $v20 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$arr18;"synthText";$v19;"synthText";$v20)
+ARRAY LONGINT($colVariable18;0)
+var $headerVar19 : Pointer
+var $footerVar20 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable18;"synthText";$headerVar19;"synthText";$footerVar20)
 // overload 0 union-sweep footerVar=Variable
-ARRAY LONGINT($arr21;0)
-var $v22 : Integer
-var $v23 : Variant
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$arr21;"synthText";$v22;"synthText";$v23)
+ARRAY LONGINT($colVariable21;0)
+var $headerVar22 : Integer
+var $footerVar23 : Variant
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable21;"synthText";$headerVar22;"synthText";$footerVar23)
 // overload 0 union-sweep footerVar=Pointer
-ARRAY LONGINT($arr24;0)
-var $v25 : Integer
-var $v26 : Pointer
-LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$arr24;"synthText";$v25;"synthText";$v26)
+ARRAY LONGINT($colVariable24;0)
+var $headerVar25 : Integer
+var $footerVar26 : Pointer
+LISTBOX DUPLICATE COLUMN(*;"synthText";1;"synthText";$colVariable24;"synthText";$headerVar25;"synthText";$footerVar26)
 // overload 1
-var $v27 : Variant
-ARRAY LONGINT($arr28;0)
-var $v29 : Integer
-var $v30 : Variant
-LISTBOX DUPLICATE COLUMN($v27;1;"synthText";$arr28;"synthText";$v29;"synthText";$v30)
+var $object27 : Variant
+ARRAY LONGINT($colVariable28;0)
+var $headerVar29 : Integer
+var $footerVar30 : Variant
+LISTBOX DUPLICATE COLUMN($object27;1;"synthText";$colVariable28;"synthText";$headerVar29;"synthText";$footerVar30)
 // overload 1 union-sweep colVariable=Array
-var $v31 : Variant
-ARRAY LONGINT($arr32;0)
-var $v33 : Integer
-var $v34 : Variant
-LISTBOX DUPLICATE COLUMN($v31;1;"synthText";$arr32;"synthText";$v33;"synthText";$v34)
+var $object31 : Variant
+ARRAY LONGINT($colVariable32;0)
+var $headerVar33 : Integer
+var $footerVar34 : Variant
+LISTBOX DUPLICATE COLUMN($object31;1;"synthText";$colVariable32;"synthText";$headerVar33;"synthText";$footerVar34)
 // overload 1 union-sweep colVariable=Field
-var $v35 : Variant
-var $v36 : Integer
-var $v37 : Variant
-LISTBOX DUPLICATE COLUMN($v35;1;"synthText";[SynthTable]label;"synthText";$v36;"synthText";$v37)
+var $object35 : Variant
+var $headerVar36 : Integer
+var $footerVar37 : Variant
+LISTBOX DUPLICATE COLUMN($object35;1;"synthText";[SynthTable]label;"synthText";$headerVar36;"synthText";$footerVar37)
 // overload 1 union-sweep colVariable=Variable
-var $v38 : Variant
-var $v39 : Variant
-var $v40 : Integer
-var $v41 : Variant
-LISTBOX DUPLICATE COLUMN($v38;1;"synthText";$v39;"synthText";$v40;"synthText";$v41)
+var $object38 : Variant
+var $colVariable39 : Variant
+var $headerVar40 : Integer
+var $footerVar41 : Variant
+LISTBOX DUPLICATE COLUMN($object38;1;"synthText";$colVariable39;"synthText";$headerVar40;"synthText";$footerVar41)
 // overload 1 union-sweep colVariable=Pointer
-var $v42 : Variant
-var $v43 : Pointer
-var $v44 : Integer
-var $v45 : Variant
-LISTBOX DUPLICATE COLUMN($v42;1;"synthText";$v43;"synthText";$v44;"synthText";$v45)
+var $object42 : Variant
+var $colVariable43 : Pointer
+var $headerVar44 : Integer
+var $footerVar45 : Variant
+LISTBOX DUPLICATE COLUMN($object42;1;"synthText";$colVariable43;"synthText";$headerVar44;"synthText";$footerVar45)
 // overload 1 union-sweep headerVar=Integer
-var $v46 : Variant
-ARRAY LONGINT($arr47;0)
-var $v48 : Integer
-var $v49 : Variant
-LISTBOX DUPLICATE COLUMN($v46;1;"synthText";$arr47;"synthText";$v48;"synthText";$v49)
+var $object46 : Variant
+ARRAY LONGINT($colVariable47;0)
+var $headerVar48 : Integer
+var $footerVar49 : Variant
+LISTBOX DUPLICATE COLUMN($object46;1;"synthText";$colVariable47;"synthText";$headerVar48;"synthText";$footerVar49)
 // overload 1 union-sweep headerVar=Pointer
-var $v50 : Variant
-ARRAY LONGINT($arr51;0)
-var $v52 : Pointer
-var $v53 : Variant
-LISTBOX DUPLICATE COLUMN($v50;1;"synthText";$arr51;"synthText";$v52;"synthText";$v53)
+var $object50 : Variant
+ARRAY LONGINT($colVariable51;0)
+var $headerVar52 : Pointer
+var $footerVar53 : Variant
+LISTBOX DUPLICATE COLUMN($object50;1;"synthText";$colVariable51;"synthText";$headerVar52;"synthText";$footerVar53)
 // overload 1 union-sweep footerVar=Variable
-var $v54 : Variant
-ARRAY LONGINT($arr55;0)
-var $v56 : Integer
-var $v57 : Variant
-LISTBOX DUPLICATE COLUMN($v54;1;"synthText";$arr55;"synthText";$v56;"synthText";$v57)
+var $object54 : Variant
+ARRAY LONGINT($colVariable55;0)
+var $headerVar56 : Integer
+var $footerVar57 : Variant
+LISTBOX DUPLICATE COLUMN($object54;1;"synthText";$colVariable55;"synthText";$headerVar56;"synthText";$footerVar57)
 // overload 1 union-sweep footerVar=Pointer
-var $v58 : Variant
-ARRAY LONGINT($arr59;0)
-var $v60 : Integer
-var $v61 : Pointer
-LISTBOX DUPLICATE COLUMN($v58;1;"synthText";$arr59;"synthText";$v60;"synthText";$v61)
+var $object58 : Variant
+ARRAY LONGINT($colVariable59;0)
+var $headerVar60 : Integer
+var $footerVar61 : Pointer
+LISTBOX DUPLICATE COLUMN($object58;1;"synthText";$colVariable59;"synthText";$headerVar60;"synthText";$footerVar61)

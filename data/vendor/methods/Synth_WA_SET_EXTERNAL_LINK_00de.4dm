@@ -1,9 +1,9 @@
 // overload 0
-ARRAY TEXT($arr1;0)
-ARRAY BOOLEAN($arr2;0)
-WA SET EXTERNAL LINKS FILTERS(*;"synthText";$arr1;$arr2)
+ARRAY TEXT($filtersArr1;0)
+ARRAY BOOLEAN($allowDenyArr2;0)
+WA SET EXTERNAL LINKS FILTERS(*;"synthText";$filtersArr1;$allowDenyArr2)
 // overload 0 flag-sweep omit-leading-thru:*
-var $v3 : Variant
-ARRAY TEXT($arr4;0)
-ARRAY BOOLEAN($arr5;0)
-WA SET EXTERNAL LINKS FILTERS($v3;$arr4;$arr5)
+var $object3 : Variant
+ARRAY TEXT($filtersArr4;0)
+ARRAY BOOLEAN($allowDenyArr5;0)
+WA SET EXTERNAL LINKS FILTERS($object3;$filtersArr4;$allowDenyArr5)

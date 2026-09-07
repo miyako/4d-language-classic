@@ -1,4 +1,4 @@
 // overload 0
-ARRAY INTEGER($arr1;0)
-ARRAY TEXT($arr2;0)
-PLUGIN LIST($arr1;$arr2)
+ARRAY INTEGER($numbersArray1;0)
+ARRAY TEXT($namesArray2;0)
+PLUGIN LIST($numbersArray1;$namesArray2)

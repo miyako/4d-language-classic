@@ -1,5 +1,5 @@
 // overload 0
-var $v1 : Text
-var $v2 : Variant
+var $siblingElemName1 : Text
+var $siblingElemValue2 : Variant
 var $synthResult3 : Variant
-$synthResult3:=DOM Get previous sibling XML element("synthText";$v1;$v2)
+$synthResult3:=DOM Get previous sibling XML element("synthText";$siblingElemName1;$siblingElemValue2)

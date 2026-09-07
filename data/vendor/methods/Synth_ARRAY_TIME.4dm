@@ -1,2 +1,2 @@
 // overload 0
-ARRAY TIME($arr1;1;1)
+ARRAY TIME($arrayName1;1;1)

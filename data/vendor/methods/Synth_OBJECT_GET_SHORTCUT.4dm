@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Text
-var $v2 : Integer
-OBJECT GET SHORTCUT(*;"synthText";$v1;$v2)
+var $key1 : Text
+var $modifiers2 : Integer
+OBJECT GET SHORTCUT(*;"synthText";$key1;$modifiers2)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $v3 : Variant
-var $v4 : Text
-var $v5 : Integer
-OBJECT GET SHORTCUT($v3;$v4;$v5)
+var $object3 : Variant
+var $key4 : Text
+var $modifiers5 : Integer
+OBJECT GET SHORTCUT($object3;$key4;$modifiers5)

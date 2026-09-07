@@ -1,3 +1,3 @@
 // overload 0
-var $v1 : Text
-EDIT FORMULA([SynthTable];$v1)
+var $formula1 : Text
+EDIT FORMULA([SynthTable];$formula1)

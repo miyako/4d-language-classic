@@ -1,9 +1,9 @@
 // overload 0
-var $v1 : Text
-var $v2 : Text
-var $v3 : Integer
-var $v4 : Integer
-var $v5 : Integer
-var $v6 : Text
-var $v7 : Text
-QR GET INFO COLUMN(1;1;$v1;$v2;$v3;$v4;$v5;$v6;$v7)
+var $title1 : Text
+var $object2 : Text
+var $hide3 : Integer
+var $size4 : Integer
+var $repeatedValue5 : Integer
+var $displayFormat6 : Text
+var $resultVar7 : Text
+QR GET INFO COLUMN(1;1;$title1;$object2;$hide3;$size4;$repeatedValue5;$displayFormat6;$resultVar7)

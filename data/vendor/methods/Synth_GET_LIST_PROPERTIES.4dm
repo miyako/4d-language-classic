@@ -1,8 +1,8 @@
 // overload 0
-var $v1 : Integer
-var $v2 : Integer
-var $v3 : Integer
-var $v4 : Integer
-var $v5 : Integer
-var $v6 : Integer
-GET LIST PROPERTIES(1;$v1;$v2;$v3;$v4;$v5;$v6)
+var $appearance1 : Integer
+var $icon2 : Integer
+var $lineHeight3 : Integer
+var $doubleClick4 : Integer
+var $multiSelections5 : Integer
+var $editable6 : Integer
+GET LIST PROPERTIES(1;$appearance1;$icon2;$lineHeight3;$doubleClick4;$multiSelections5;$editable6)
