@@ -48,9 +48,8 @@ fn main() {
                 full_path.display()
             );
         }
-        let abs = fs::canonicalize(&full_path).unwrap_or_else(|e| {
-            panic!("failed to canonicalize {}: {e}", full_path.display())
-        });
+        let abs = fs::canonicalize(&full_path)
+            .unwrap_or_else(|e| panic!("failed to canonicalize {}: {e}", full_path.display()));
         let abs_str = abs
             .to_str()
             .unwrap_or_else(|| panic!("non-utf8 path: {}", abs.display()))

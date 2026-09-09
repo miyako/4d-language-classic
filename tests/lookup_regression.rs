@@ -22,7 +22,8 @@ fn assert_top1(query: &str, expected_id: &str) {
         "query {query:?} returned no results (expected top-1 {expected_id:?})"
     );
     assert_eq!(
-        results[0].id, expected_id,
+        results[0].id,
+        expected_id,
         "query {query:?}: expected top-1 {expected_id:?}, got {:?} (full top-5: {:?})",
         results[0].id,
         results.iter().map(|r| r.id.as_str()).collect::<Vec<_>>()
@@ -82,7 +83,11 @@ fn sort_an_array_or_records() {
 fn print_options() {
     assert_in_top(
         "get print option value",
-        &["GET-PRINT-OPTION", "SET-PRINT-OPTION", "PRINT-OPTION-VALUES"],
+        &[
+            "GET-PRINT-OPTION",
+            "SET-PRINT-OPTION",
+            "PRINT-OPTION-VALUES",
+        ],
         3,
     );
 }
@@ -96,7 +101,11 @@ fn connect_to_imap_mailbox() {
 fn send_an_email() {
     assert_in_top(
         "send an email",
-        &["MAIL-New-attachment", "MAIL-Convert-to-MIME", "IMAP-New-transporter"],
+        &[
+            "MAIL-New-attachment",
+            "MAIL-Convert-to-MIME",
+            "IMAP-New-transporter",
+        ],
         3,
     );
 }
@@ -125,7 +134,12 @@ fn full_ir_corpus_deserializes() {
 /// check, not a full corpus re-verification).
 #[test]
 fn known_commands_have_verified_examples() {
-    for id in ["JSON-Parse", "JSON-Stringify", "Select-document", "IMAP-New-transporter"] {
+    for id in [
+        "JSON-Parse",
+        "JSON-Stringify",
+        "Select-document",
+        "IMAP-New-transporter",
+    ] {
         let results = model::lookup(id, 5);
         let hit = results
             .iter()
@@ -141,4 +155,70 @@ fn known_commands_have_verified_examples() {
             "expected {id}'s available example to include a placeholder_note warning callers not to copy synthetic tokens verbatim"
         );
     }
+}
+
+/// Every command carries an official documentation permalink, so a result can
+/// be cited back to the user. Before this existed the IR had no doc field at
+/// all, and when it was added upstream it was added to the OOP corpus first --
+/// so this asserts the classic corpus is complete rather than partially
+/// migrated.
+///
+/// The assertion is on the *absence of a version segment*, not merely on the
+/// URL prefix. A version-pinned URL like `/docs/21-R3/commands/copy-array`
+/// would satisfy a prefix check while being exactly the thing to avoid: it
+/// stops resolving once that release is superseded, rotting the binary on 4D's
+/// release schedule.
+#[test]
+fn every_command_has_a_version_less_doc_permalink() {
+    const BASE: &str = "https://developer.4d.com/docs/";
+    let root = ir::parse_embedded();
+    let mut seen = 0;
+
+    for command in &root.commands {
+        let page = command
+            .doc_page
+            .as_deref()
+            .unwrap_or_else(|| panic!("{} has no docPage", command.id));
+        assert!(
+            page.starts_with(BASE),
+            "{} docPage is not an official permalink: {page}",
+            command.id
+        );
+        let tail = &page[BASE.len()..];
+        assert!(
+            !tail.split('/').next().unwrap_or("").contains("21-")
+                && !tail.starts_with("20")
+                && !tail.starts_with("19"),
+            "{} docPage is pinned to a release and will stop resolving: {page}",
+            command.id
+        );
+        assert!(
+            !page.ends_with(".html"),
+            "{} docPage still looks like a mirror path: {page}",
+            command.id
+        );
+        seen += 1;
+    }
+    assert_eq!(seen, 1456, "expected the full classic corpus");
+
+    // The mirror path is preserved upstream as `docPageLocal` for provenance,
+    // but the mirror is not shipped here, so it must never reach a response.
+    let json = serde_json::to_string(&model::lookup("copy an array", 5)).expect("serialize");
+    assert!(
+        !json.contains("docPageLocal") && !json.contains("mirror/docs"),
+        "a mirror path leaked into a served response"
+    );
+
+    // Control: the checks above are only meaningful if they reject the two
+    // shapes this test exists to keep out.
+    let rejects = |page: &str| {
+        !page.starts_with(BASE) || page[BASE.len()..].starts_with("21-") || page.ends_with(".html")
+    };
+    assert!(rejects(
+        "https://developer.4d.com/docs/21-R3/commands/copy-array"
+    ));
+    assert!(rejects("mirror/docs/21-R3/commands/copy-array.html"));
+    assert!(!rejects(
+        "https://developer.4d.com/docs/commands/copy-array"
+    ));
 }

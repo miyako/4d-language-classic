@@ -32,6 +32,7 @@ pub struct CommandRecord {
     pub id: String,
     pub display_name: String,
     pub theme: String,
+    pub doc_page: Option<String>,
     pub kind: Option<String>,
     pub overloads: Vec<Value>,
     pub constraints: Vec<String>,
@@ -112,6 +113,7 @@ fn build_index() -> Index {
                 id: cmd.id,
                 display_name: cmd.display_name,
                 theme: cmd.theme,
+                doc_page: cmd.doc_page,
                 kind: cmd.kind,
                 overloads: cmd.overloads,
                 constraints: cmd.constraints,
@@ -154,8 +156,7 @@ fn index_command(cmd: &CommandIr, acc: &mut HashMap<String, HashMap<String, f32>
     let mut add = |text: &str, weight: f32| {
         let unique: HashSet<String> = tokenize(text).into_iter().collect();
         for tok in unique {
-            *acc
-                .entry(tok)
+            *acc.entry(tok)
                 .or_default()
                 .entry(cmd.id.clone())
                 .or_insert(0.0) += weight;
@@ -241,7 +242,8 @@ fn parse_aliases(json: &str) -> HashMap<String, Vec<String>> {
     raw.into_iter()
         .filter(|(k, _)| !k.starts_with('_'))
         .filter_map(|(k, v)| {
-            let list = v.as_array()?
+            let list = v
+                .as_array()?
                 .iter()
                 .filter_map(|x| x.as_str().map(str::to_string))
                 .collect();

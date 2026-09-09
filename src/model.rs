@@ -30,6 +30,8 @@ pub struct LookupResult {
     #[serde(rename = "displayName")]
     pub display_name: String,
     pub theme: String,
+    #[serde(rename = "docPage", skip_serializing_if = "Option::is_none")]
+    pub doc_page: Option<String>,
     #[serde(skip_serializing_if = "Option::is_none")]
     pub kind: Option<String>,
     pub score: f32,
@@ -65,6 +67,7 @@ pub fn build_result(record: &CommandRecord, score: f32) -> LookupResult {
         id: record.id.clone(),
         display_name: record.display_name.clone(),
         theme: record.theme.clone(),
+        doc_page: record.doc_page.clone(),
         kind: record.kind.clone(),
         score,
         overloads: record.overloads.clone(),

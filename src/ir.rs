@@ -30,6 +30,13 @@ pub struct CommandIr {
     #[serde(default)]
     pub kind: Option<String>,
     pub theme: String,
+    /// Official documentation permalink, e.g.
+    /// `https://developer.4d.com/docs/commands/copy-array`. Version-less by
+    /// design upstream: a version-pinned URL stops resolving once that release
+    /// is superseded. `docPageLocal` is deliberately not deserialized -- it is
+    /// a path into a docs mirror this binary does not ship.
+    #[serde(rename = "docPage", default)]
+    pub doc_page: Option<String>,
     /// Raw overload objects, echoed verbatim in responses.
     #[serde(default)]
     pub overloads: Vec<Value>,
