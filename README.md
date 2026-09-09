@@ -80,7 +80,8 @@ $ curl "http://localhost:8080/lookup?q=parse+json&limit=3"
 
 ### Response shape
 
-Each result includes the command's id/theme, its match score, the IR's
+Each result includes the command's id/theme, a `docPage` permalink to the
+official documentation, its match score, the IR's
 overload objects **verbatim** (not reinterpreted — this is the authoritative
 syntax contract: param names/types/optionality/directions, `returns`,
 `discriminatedBy`, `mechanism`, etc.), command-level `constraints`, and an
@@ -91,6 +92,7 @@ syntax contract: param names/types/optionality/directions, `returns`,
   "id": "JSON-Parse",
   "displayName": "JSON Parse",
   "theme": "JSON",
+  "docPage": "https://developer.4d.com/docs/commands/json-parse",
   "score": 75.33,
   "overloads": [ /* ...raw IR overload objects... */ ],
   "constraints": [ "..." ],
@@ -116,6 +118,15 @@ values, variable names, and table/field references rather than copying
 these tokens verbatim. This is surfaced both as `example.placeholder_note`
 (machine-readable) and inline in the CLI's text-mode output.
 
+
+`docPage` is an official documentation URL and is safe to cite verbatim; text
+mode prints it as a `docs:` line. It is **version-less by design** --
+`https://developer.4d.com/docs/commands/json-parse`, not
+`.../docs/21-R3/commands/json-parse` -- because a version-pinned URL stops
+resolving once that release is superseded and would rot this binary on 4D's
+release schedule. All 1456 were checked against the live site, each page's
+heading matched to its command so that a slug collision could not pass as a
+mere 200.
 
 ## How matching works
 

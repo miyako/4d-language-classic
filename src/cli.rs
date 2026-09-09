@@ -65,14 +65,25 @@ pub fn run(args: QueryArgs) -> i32 {
 
 fn print_text(results: &[LookupResult]) {
     for (rank, r) in results.iter().enumerate() {
-        println!("{}. {} ({})  score={:.2}", rank + 1, r.display_name, r.id, r.score);
+        println!(
+            "{}. {} ({})  score={:.2}",
+            rank + 1,
+            r.display_name,
+            r.id,
+            r.score
+        );
         println!("   theme: {}", r.theme);
+        if let Some(page) = &r.doc_page {
+            println!("   docs: {page}");
+        }
         if let Some(role) = first_semantic_role(r) {
             println!("   {role}");
         }
         match &r.example.raw {
             Some(raw) => {
-                println!("   example (compiler-verified synthetic, see --json for full provenance):");
+                println!(
+                    "   example (compiler-verified synthetic, see --json for full provenance):"
+                );
                 println!("   NOTE: \"synthText\", $synthResult1/$arr1/$v1, [SynthTable], etc. below are auto-generated placeholders -- substitute your own values/names, do not copy verbatim.");
                 for line in raw.lines() {
                     println!("     {line}");
