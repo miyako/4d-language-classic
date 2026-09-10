@@ -50601,13 +50601,73 @@
               "position": "trailing"
             }
           ],
-          "semanticRole": "Adds a new element, optionally passing one or more attribute-name/attribute-value pairs as parallel arrays (attribNamesArray a Text array, attribValuesArray a typed Array of text/date/number/boolean/picture elements). Identical to SAX OPEN XML ELEMENT except for this array support."
+          "semanticRole": "Adds a new element, optionally passing one or more attribute-name/attribute-value pairs as parallel arrays (attribNamesArray a Text array, attribValuesArray a typed Array of text/date/number/boolean/picture elements). Identical to SAX OPEN XML ELEMENT except for this array support.",
+          "discriminatedBy": {
+            "param": "attribNamesArray",
+            "rule": "Pass array variables for the attribute pair(s) to use the array form (each pair supplies as many attributes as the arrays have elements)."
+          }
+        },
+        {
+          "params": [
+            {
+              "name": "document",
+              "type": {
+                "kind": "concrete",
+                "name": "Time"
+              },
+              "direction": "in",
+              "optional": false
+            },
+            {
+              "name": "tag",
+              "type": {
+                "kind": "concrete",
+                "name": "Text"
+              },
+              "direction": "in",
+              "optional": false
+            },
+            {
+              "name": "group",
+              "members": [
+                {
+                  "name": "attribNamesArray",
+                  "type": {
+                    "kind": "concrete",
+                    "name": "Text"
+                  },
+                  "direction": "in",
+                  "optional": false
+                },
+                {
+                  "name": "attribValuesArray",
+                  "type": {
+                    "kind": "concrete",
+                    "name": "Text"
+                  },
+                  "direction": "in",
+                  "optional": false
+                }
+              ],
+              "cardinality": {
+                "min": 0,
+                "max": null
+              },
+              "position": "trailing"
+            }
+          ],
+          "semanticRole": "Scalar form: adds a new element, optionally passing one or more attribute-name/attribute-value pairs as individual Text values (as SAX OPEN XML ELEMENT does), instead of as parallel arrays. Documented by the page's own second signature line and confirmed against the real 4D compiler (2026-09-10).",
+          "discriminatedBy": {
+            "param": "attribNamesArray",
+            "rule": "Pass scalar Text variables/fields (not arrays) for the attribute pair(s) to use the scalar form. Both members must be addressable variables or fields -- the compiler rejects literal constants here (see constraints)."
+          }
         }
       ],
       "constraints": [
         "Identical to SAX OPEN XML ELEMENT except for array support; see that command for tag naming rules and element-closing behavior.",
         "attribValuesArray accepts arrays of text, date, number, Boolean, or picture type; 4D performs the necessary conversions automatically, configurable via XML SET OPTIONS.",
         "The attribNamesArray/attribValuesArray arrays must be created beforehand and operate as attribute/attribute-value pairs; as many pairs of arrays (and items per pair) as desired may be passed.",
+        "The trailing attribute pair(s) may alternatively be passed as scalar Text values rather than arrays (the page's second signature line, overload 1). In that form both members must be addressable variables or fields: the real 4D compiler rejects literal constants there (\"Invalid constant type: Alphanumeric\") even though the accepted data type is plain Text -- e.g. SAX OPEN XML ELEMENT ARRAYS($doc;$tag;$name;$value) compiles, SAX OPEN XML ELEMENT ARRAYS($doc;$tag;\"name\";\"value\") does not (user-confirmed, 2026-09-10; tool4d's static analyzer flags neither form, so this rule is documented here rather than discoverable by cross-check). This literal restriction is specific to this command; the sibling SAX OPEN XML ELEMENT does accept literal attribute pairs.",
         "Reference lifecycle (implied convention, not syntactically enforced): SAX write document lifecycle: SAX OPEN XML ELEMENT (or the ARRAYS variant) opens an element -> SAX ADD XML ELEMENT VALUE adds its content while it remains open -> SAX CLOSE XML ELEMENT closes the most recently opened element (or the document itself is closed, which auto-closes any still-open elements)."
       ],
       "docPage": "https://developer.4d.com/docs/commands/sax-open-xml-element-arrays",
