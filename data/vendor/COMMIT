@@ -1,7 +1,7 @@
 repo=miyako/4d-static-docs
 branch=main
-commit=57df7461874cf8709b840dafd38924310cbb4208
-commit_date=2026-09-09T16:17:02+09:00
-commit_subject=Add docPage permalinks to the classic IR (#27)
-fetched_at=2026-09-09T07:17:00Z
+commit=b70029055206089f7846e1775137112a96fb90a3
+commit_date=2026-09-10T21:52:21+09:00
+commit_subject=Restore SAX OPEN XML ELEMENT ARRAYS' scalar attribute-pair overload (#32)
+fetched_at=2026-09-10T12:55:43Z
 files_vendored=4d-command-ir.json,synth_manifest.json,methods/Synth_*.4dm (1334 files)
