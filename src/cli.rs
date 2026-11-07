@@ -82,7 +82,7 @@ fn print_text(results: &[LookupResult]) {
         match &r.example.raw {
             Some(raw) => {
                 println!(
-                    "   example (compiler-verified synthetic, see --json for full provenance):"
+                    "   example (synthetic, static syntax check only; tool4d 21R5.100156; see --json for full provenance):"
                 );
                 println!("   NOTE: \"synthText\", $synthResult1/$arr1/$v1, [SynthTable], etc. below are auto-generated placeholders -- substitute your own values/names, do not copy verbatim.");
                 for line in raw.lines() {

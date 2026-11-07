@@ -2,7 +2,7 @@
 name = "fourd-language-classic"
 version = "0.1.0"
 edition = "2021"
-description = "Deterministic natural-language lookup service for the 4D classic-language command reference, backed by a build-time-embedded, compiler-verified command IR."
+description = "Deterministic natural-language lookup service for the 4D classic-language command reference, backed by a build-time-embedded, statically checked command IR."
 license = "MIT"
 default-run = "4d-language-classic"
 

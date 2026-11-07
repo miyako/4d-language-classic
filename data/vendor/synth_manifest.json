@@ -3110,6 +3110,16 @@
         }
       ]
     },
+    "Sources/Methods/Synth_Deferred_formulas.4dm": {
+      "command_id": "Deferred-formulas",
+      "overloads": [
+        {
+          "overload_index": 0,
+          "variant": "default",
+          "comment_line": 1
+        }
+      ]
+    },
     "Sources/Methods/Synth_Delete_string.4dm": {
       "command_id": "Delete-string",
       "overloads": [
@@ -9851,37 +9861,47 @@
         {
           "overload_index": 0,
           "variant": "flag:omit-leading-thru:asObjectName",
-          "comment_line": 6
+          "comment_line": 7
         },
         {
           "overload_index": 0,
           "variant": "union:foregroundColor=Text",
-          "comment_line": 12
+          "comment_line": 14
         },
         {
           "overload_index": 0,
           "variant": "union:foregroundColor=Integer",
-          "comment_line": 17
+          "comment_line": 20
         },
         {
           "overload_index": 0,
           "variant": "union:backgroundColor=Text",
-          "comment_line": 22
+          "comment_line": 26
         },
         {
           "overload_index": 0,
           "variant": "union:backgroundColor=Integer",
-          "comment_line": 27
-        },
-        {
-          "overload_index": 0,
-          "variant": "union:altBackgrndColor=Text",
           "comment_line": 32
         },
         {
           "overload_index": 0,
+          "variant": "union:altBackgrndColor=Text",
+          "comment_line": 38
+        },
+        {
+          "overload_index": 0,
           "variant": "union:altBackgrndColor=Integer",
-          "comment_line": 37
+          "comment_line": 44
+        },
+        {
+          "overload_index": 0,
+          "variant": "union:borderColor=Text",
+          "comment_line": 50
+        },
+        {
+          "overload_index": 0,
+          "variant": "union:borderColor=Integer",
+          "comment_line": 56
         }
       ]
     },
@@ -10315,6 +10335,21 @@
         }
       ]
     },
+    "Sources/Methods/Synth_OBJECT_Get_padding.4dm": {
+      "command_id": "OBJECT-Get-padding",
+      "overloads": [
+        {
+          "overload_index": 0,
+          "variant": "default",
+          "comment_line": 1
+        },
+        {
+          "overload_index": 0,
+          "variant": "flag:omit-leading-thru:asObjectName",
+          "comment_line": 4
+        }
+      ]
+    },
     "Sources/Methods/Synth_OBJECT_Get_placeholder.4dm": {
       "command_id": "OBJECT-Get-placeholder",
       "overloads": [
@@ -10540,8 +10575,53 @@
         },
         {
           "overload_index": 0,
-          "variant": "flag:omit-leading-thru:*",
+          "variant": "enum:FormObjectBorderStyle=Border None",
           "comment_line": 3
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border Plain",
+          "comment_line": 5
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border Dotted",
+          "comment_line": 7
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border Raised",
+          "comment_line": 9
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border Sunken",
+          "comment_line": 11
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border Double",
+          "comment_line": 13
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border System",
+          "comment_line": 15
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border System Rounded",
+          "comment_line": 17
+        },
+        {
+          "overload_index": 0,
+          "variant": "enum:FormObjectBorderStyle=Border Custom",
+          "comment_line": 19
+        },
+        {
+          "overload_index": 0,
+          "variant": "flag:omit-leading-thru:*",
+          "comment_line": 21
         }
       ]
     },
@@ -10945,6 +11025,21 @@
         }
       ]
     },
+    "Sources/Methods/Synth_OBJECT_SET_PADDING.4dm": {
+      "command_id": "OBJECT-SET-PADDING",
+      "overloads": [
+        {
+          "overload_index": 0,
+          "variant": "default",
+          "comment_line": 1
+        },
+        {
+          "overload_index": 0,
+          "variant": "flag:omit-leading-thru:asObjectName",
+          "comment_line": 3
+        }
+      ]
+    },
     "Sources/Methods/Synth_OBJECT_SET_PLACEHOLDER.4dm": {
       "command_id": "OBJECT-SET-PLACEHOLDER",
       "overloads": [
@@ -11032,6 +11127,16 @@
           "overload_index": 0,
           "variant": "union:altBackgrndColor=Integer",
           "comment_line": 16
+        },
+        {
+          "overload_index": 0,
+          "variant": "union:borderColor=Text",
+          "comment_line": 18
+        },
+        {
+          "overload_index": 0,
+          "variant": "union:borderColor=Integer",
+          "comment_line": 20
         }
       ]
     },
@@ -19365,6 +19470,16 @@
         }
       ]
     },
+    "Sources/Methods/Synth_defer.4dm": {
+      "command_id": "defer",
+      "overloads": [
+        {
+          "overload_index": 0,
+          "variant": "default",
+          "comment_line": 1
+        }
+      ]
+    },
     "Sources/Methods/Synth_ds.4dm": {
       "command_id": "ds",
       "overloads": [
@@ -19639,6 +19754,7 @@
     "Deactivated",
     "Dec",
     "Decrypt-data-BLOB",
+    "Deferred-formulas",
     "Delete-string",
     "Discover-data-key",
     "Displayed-line-number",
@@ -20103,6 +20219,7 @@
     "OBJECT-Get-list-reference",
     "OBJECT-Get-multiline",
     "OBJECT-Get-name",
+    "OBJECT-Get-padding",
     "OBJECT-Get-placeholder",
     "OBJECT-Get-pointer",
     "OBJECT-Get-style-sheet",
@@ -20143,6 +20260,7 @@
     "OBJECT-SET-MAXIMUM-VALUE",
     "OBJECT-SET-MINIMUM-VALUE",
     "OBJECT-SET-MULTILINE",
+    "OBJECT-SET-PADDING",
     "OBJECT-SET-PLACEHOLDER",
     "OBJECT-SET-PRINT-VARIABLE-FRAME",
     "OBJECT-SET-RESIZING-OPTIONS",
@@ -20724,6 +20842,7 @@
     "Year-of",
     "ZIP-Create-archive",
     "ZIP-Read-archive",
+    "defer",
     "ds",
     "throw"
   ]
