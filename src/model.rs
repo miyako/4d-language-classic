@@ -20,7 +20,7 @@ pub struct ExampleInfo {
     pub placeholder_note: Option<&'static str>,
 }
 
-const PROVENANCE: &str = "compiler-verified synthetic example (tool4d check-syntax via the 4d-static-docs pipeline's stage 6); raw text, not idiomatic hand-written code";
+const PROVENANCE: &str = "synthetic example checked upstream by tool4d experimental/checkSyntax with fixture 21 R5, build 21R5.100156 (21 R5 BETA); static syntax check only, not runtime execution, full-application compilation, or exhaustive arity proof; raw text, not idiomatic hand-written code";
 
 const PLACEHOLDER_NOTE: &str = "Tokens such as \"synthText\", $synthResult1/$arr1/$v1, and [SynthTable] in `raw` are auto-generated placeholder literals, variable names, and table references -- substitute your own values, variable names, and table/field references when adapting this example; do not copy them verbatim.";
 

@@ -5,6 +5,14 @@
 /// provenance: repo, commit sha, and fetch date).
 pub static IR_JSON: &str = include_str!("../data/vendor/4d-command-ir.json");
 
+/// Source commit and immutable upstream evidence available without altering
+/// the lookup response schema. The snapshot binds corpus/method hashes to
+/// the checkSyntax fixture; the inventory records unresolved limitations.
+pub static SOURCE_COMMIT: &str = include_str!("../data/vendor/COMMIT");
+pub static SNAPSHOT_JSON: &str = include_str!("../data/vendor/r5_snapshot.json");
+pub static CONFLICT_INVENTORY_JSON: &str =
+    include_str!("../data/vendor/r5_conflict_inventory.json");
+
 /// Hand-curated deterministic colloquial/synonym expansion table used by the
 /// tokenizer (see `index.rs`).
 pub static ALIASES_JSON: &str = include_str!("../data/aliases.json");

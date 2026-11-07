@@ -2,40 +2,60 @@
 var $foregroundColor1 : Text
 var $backgroundColor2 : Text
 var $altBackgrndColor3 : Text
-OBJECT GET RGB COLORS(*;"synthText";$foregroundColor1;$backgroundColor2;$altBackgrndColor3)
+var $borderColor4 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor1;$backgroundColor2;$altBackgrndColor3;$borderColor4)
 // overload 0 flag-sweep omit-leading-thru:asObjectName
-var $object4 : Variant
-var $foregroundColor5 : Integer
-var $backgroundColor6 : Integer
-var $altBackgrndColor7 : Integer
-OBJECT GET RGB COLORS($object4;$foregroundColor5;$backgroundColor6;$altBackgrndColor7)
+var $object5 : Variant
+var $foregroundColor6 : Integer
+var $backgroundColor7 : Integer
+var $altBackgrndColor8 : Integer
+var $borderColor9 : Integer
+OBJECT GET RGB COLORS($object5;$foregroundColor6;$backgroundColor7;$altBackgrndColor8;$borderColor9)
 // overload 0 union-sweep foregroundColor=Text
-var $foregroundColor8 : Text
-var $backgroundColor9 : Text
-var $altBackgrndColor10 : Text
-OBJECT GET RGB COLORS(*;"synthText";$foregroundColor8;$backgroundColor9;$altBackgrndColor10)
+var $foregroundColor10 : Text
+var $backgroundColor11 : Text
+var $altBackgrndColor12 : Text
+var $borderColor13 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor10;$backgroundColor11;$altBackgrndColor12;$borderColor13)
 // overload 0 union-sweep foregroundColor=Integer
-var $foregroundColor11 : Integer
-var $backgroundColor12 : Text
-var $altBackgrndColor13 : Text
-OBJECT GET RGB COLORS(*;"synthText";$foregroundColor11;$backgroundColor12;$altBackgrndColor13)
-// overload 0 union-sweep backgroundColor=Text
-var $foregroundColor14 : Text
+var $foregroundColor14 : Integer
 var $backgroundColor15 : Text
 var $altBackgrndColor16 : Text
-OBJECT GET RGB COLORS(*;"synthText";$foregroundColor14;$backgroundColor15;$altBackgrndColor16)
+var $borderColor17 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor14;$backgroundColor15;$altBackgrndColor16;$borderColor17)
+// overload 0 union-sweep backgroundColor=Text
+var $foregroundColor18 : Text
+var $backgroundColor19 : Text
+var $altBackgrndColor20 : Text
+var $borderColor21 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor18;$backgroundColor19;$altBackgrndColor20;$borderColor21)
 // overload 0 union-sweep backgroundColor=Integer
-var $foregroundColor17 : Text
-var $backgroundColor18 : Integer
-var $altBackgrndColor19 : Text
-OBJECT GET RGB COLORS(*;"synthText";$foregroundColor17;$backgroundColor18;$altBackgrndColor19)
+var $foregroundColor22 : Text
+var $backgroundColor23 : Integer
+var $altBackgrndColor24 : Text
+var $borderColor25 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor22;$backgroundColor23;$altBackgrndColor24;$borderColor25)
 // overload 0 union-sweep altBackgrndColor=Text
-var $foregroundColor20 : Text
-var $backgroundColor21 : Text
-var $altBackgrndColor22 : Text
-OBJECT GET RGB COLORS(*;"synthText";$foregroundColor20;$backgroundColor21;$altBackgrndColor22)
+var $foregroundColor26 : Text
+var $backgroundColor27 : Text
+var $altBackgrndColor28 : Text
+var $borderColor29 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor26;$backgroundColor27;$altBackgrndColor28;$borderColor29)
 // overload 0 union-sweep altBackgrndColor=Integer
-var $foregroundColor23 : Text
-var $backgroundColor24 : Text
-var $altBackgrndColor25 : Integer
-OBJECT GET RGB COLORS(*;"synthText";$foregroundColor23;$backgroundColor24;$altBackgrndColor25)
+var $foregroundColor30 : Text
+var $backgroundColor31 : Text
+var $altBackgrndColor32 : Integer
+var $borderColor33 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor30;$backgroundColor31;$altBackgrndColor32;$borderColor33)
+// overload 0 union-sweep borderColor=Text
+var $foregroundColor34 : Text
+var $backgroundColor35 : Text
+var $altBackgrndColor36 : Text
+var $borderColor37 : Text
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor34;$backgroundColor35;$altBackgrndColor36;$borderColor37)
+// overload 0 union-sweep borderColor=Integer
+var $foregroundColor38 : Text
+var $backgroundColor39 : Text
+var $altBackgrndColor40 : Text
+var $borderColor41 : Integer
+OBJECT GET RGB COLORS(*;"synthText";$foregroundColor38;$backgroundColor39;$altBackgrndColor40;$borderColor41)

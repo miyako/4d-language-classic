@@ -25,7 +25,7 @@ const WEIGHT_CONSTRAINT_PROSE: f32 = 0.5;
 const STOPWORDS: &[&str] = &[
     "a", "an", "the", "to", "of", "in", "on", "for", "is", "are", "how", "do", "does", "did", "i",
     "you", "it", "and", "or", "with", "from", "at", "by", "that", "this", "can", "will", "would",
-    "should", "get", "using", "use",
+    "should", "using", "use",
 ];
 
 pub struct CommandRecord {

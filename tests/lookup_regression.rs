@@ -14,6 +14,9 @@
 
 use fourd_language_classic::ir;
 use fourd_language_classic::model;
+use fourd_language_classic::{data, index};
+use serde_json::Value;
+use std::collections::BTreeSet;
 
 fn assert_top1(query: &str, expected_id: &str) {
     let results = model::lookup(query, 5);
@@ -116,11 +119,7 @@ fn send_an_email() {
 #[test]
 fn full_ir_corpus_deserializes() {
     let root = ir::parse_embedded();
-    assert!(
-        root.commands.len() > 1000,
-        "expected the full ~1456-command corpus, got {}",
-        root.commands.len()
-    );
+    assert_eq!(root.commands.len(), 1460, "expected the pinned R5 corpus");
     for cmd in &root.commands {
         assert!(!cmd.id.is_empty());
         assert!(!cmd.display_name.is_empty());
@@ -130,7 +129,7 @@ fn full_ir_corpus_deserializes() {
 
 /// Every command that has a compiler-verified synthetic example available
 /// must resolve one via `model::lookup`'s `example` field (spot-checked
-/// against known ids rather than iterating all 1334 — this is a wiring
+/// against known ids rather than iterating all 1338 — this is a wiring
 /// check, not a full corpus re-verification).
 #[test]
 fn known_commands_have_verified_examples() {
@@ -199,18 +198,11 @@ fn every_command_has_a_version_less_doc_permalink() {
         );
         seen += 1;
     }
-    assert_eq!(seen, 1456, "expected the full classic corpus");
+    assert_eq!(seen, 1460, "expected the full classic corpus");
 
-    // The mirror path is preserved upstream as `docPageLocal` for provenance,
-    // but the mirror is not shipped here, so it must never reach a response.
+    // The mirror is not shipped, so its local path must not reach responses.
     let json = serde_json::to_string(&model::lookup("copy an array", 5)).expect("serialize");
-    assert!(
-        !json.contains("docPageLocal") && !json.contains("mirror/docs"),
-        "a mirror path leaked into a served response"
-    );
-
-    // Control: the checks above are only meaningful if they reject the two
-    // shapes this test exists to keep out.
+    assert!(!json.contains("docPageLocal") && !json.contains("mirror/docs"));
     let rejects = |page: &str| {
         !page.starts_with(BASE) || page[BASE.len()..].starts_with("21-") || page.ends_with(".html")
     };
@@ -221,4 +213,169 @@ fn every_command_has_a_version_less_doc_permalink() {
     assert!(!rejects(
         "https://developer.4d.com/docs/commands/copy-array"
     ));
+}
+
+#[test]
+fn r4_deferred_formulas_and_r5_padding_queries() {
+    for (query, id) in [
+        ("defer", "defer"),
+        ("Deferred formulas", "Deferred-formulas"),
+        ("OBJECT Get padding", "OBJECT-Get-padding"),
+        ("OBJECT SET PADDING", "OBJECT-SET-PADDING"),
+        ("read object padding", "OBJECT-Get-padding"),
+        ("set form object padding", "OBJECT-SET-PADDING"),
+    ] {
+        assert_top1(query, id);
+        let result = &model::lookup(query, 1)[0];
+        assert!(result.example.available);
+        assert!(result.example.raw.unwrap().contains(&result.display_name));
+        let provenance = result.example.provenance.unwrap();
+        assert!(provenance.contains("21R5.100156"));
+        assert!(provenance.contains("static syntax check only"));
+    }
+}
+
+#[test]
+fn exact_corpus_manifest_and_embedded_methods_agree() {
+    let root = ir::parse_embedded();
+    let manifest: Value =
+        serde_json::from_str(include_str!("../data/vendor/synth_manifest.json")).unwrap();
+    let files = manifest["files"].as_object().unwrap();
+    let examples: std::collections::BTreeMap<_, _> = data::SYNTH_EXAMPLES.iter().copied().collect();
+    assert_eq!(files.len(), 1338);
+    assert_eq!(examples.len(), 1338);
+    assert_eq!(examples.len(), data::SYNTH_EXAMPLES.len());
+
+    let expected: BTreeSet<_> = root
+        .commands
+        .iter()
+        .filter(|c| c.theme != "4D-View-Pro")
+        .map(|c| c.id.as_str())
+        .collect();
+    assert_eq!(root.commands.len() - expected.len(), 122);
+    assert_eq!(expected, examples.keys().copied().collect());
+    assert_eq!(
+        expected,
+        files
+            .values()
+            .map(|m| m["command_id"].as_str().unwrap())
+            .collect()
+    );
+    let methods = std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("data/vendor/methods");
+    let actual: BTreeSet<_> = std::fs::read_dir(&methods)
+        .unwrap()
+        .map(|entry| entry.unwrap().file_name().into_string().unwrap())
+        .filter(|name| name.starts_with("Synth_") && name.ends_with(".4dm"))
+        .collect();
+    let referenced: BTreeSet<_> = files
+        .keys()
+        .map(|path| {
+            std::path::Path::new(path)
+                .file_name()
+                .unwrap()
+                .to_str()
+                .unwrap()
+                .to_owned()
+        })
+        .collect();
+    assert_eq!(actual, referenced);
+    for (path, meta) in files {
+        let name = std::path::Path::new(path).file_name().unwrap();
+        let text = std::fs::read_to_string(methods.join(name)).unwrap();
+        assert_eq!(examples[meta["command_id"].as_str().unwrap()], text);
+    }
+}
+
+#[test]
+fn all_response_overloads_and_constraints_preserve_the_ir() {
+    let raw: Value = serde_json::from_str(data::IR_JSON).unwrap();
+    for command in raw["commands"].as_array().unwrap() {
+        let id = command["id"].as_str().unwrap();
+        let result = model::build_result(&index::get().commands[id], 1.0);
+        assert_eq!(
+            serde_json::to_value(&result.overloads).unwrap(),
+            command["overloads"],
+            "{id}"
+        );
+        assert_eq!(
+            serde_json::to_value(&result.constraints).unwrap(),
+            command["constraints"]
+                .as_array()
+                .map_or_else(|| serde_json::json!([]), |v| serde_json::json!(v)),
+            "{id}"
+        );
+        assert_eq!(
+            result.example.available,
+            command["theme"] != "4D-View-Pro",
+            "{id}"
+        );
+    }
+}
+
+#[test]
+fn r5_snapshot_and_inventory_provenance_are_source_bound() {
+    let snapshot: Value = serde_json::from_str(data::SNAPSHOT_JSON).unwrap();
+    let inventory: Value = serde_json::from_str(data::CONFLICT_INVENTORY_JSON).unwrap();
+    assert!(data::SOURCE_COMMIT.contains("commit=1dfd4e7eb832d19361f8ec1f4801603899087ca3\n"));
+    assert!(!data::SOURCE_COMMIT.contains("branch=main"));
+    assert_eq!(snapshot["version"], "21-R5");
+    assert_eq!(snapshot["status"], "BETA");
+    assert_eq!(snapshot["classic"]["commands"], 1460);
+    assert_eq!(snapshot["classic"]["methods"], 1338);
+    assert_eq!(snapshot["classic"]["compiler"]["returnedFiles"], 1338);
+    assert_eq!(snapshot["compilerBuild"], "21 R5 build 21R5.100156");
+    assert_eq!(inventory["status"], "BETA");
+    assert!(snapshot["verificationScope"]
+        .as_str()
+        .unwrap()
+        .contains("checkSyntax"));
+    assert!(inventory["semanticConflicts"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .any(|c| c["id"] == "database-parameter-135-units"
+            && c["disposition"] == "unresolved_runtime_units"));
+    assert!(inventory["compilerGateLimitations"]
+        .as_array()
+        .unwrap()
+        .iter()
+        .any(|c| c["id"] == "classic-empty-call-negative-controls"
+            && c["disposition"] == "historical_rejection_not_reproduced_by_current_checkSyntax"));
+}
+
+#[test]
+fn r5_vector_sentinels_and_border_color_are_preserved() {
+    for id in ["CREATE-INDEX", "SET-INDEX"] {
+        let result = model::build_result(&index::get().commands[id], 1.0);
+        let params = result.overloads[0]["params"].as_array().unwrap();
+        let param = params
+            .iter()
+            .find(|p| p["name"] == "indexType" || p["name"] == "index")
+            .unwrap();
+        let values = param["sentinelValues"].as_array().unwrap();
+        for (value, metric) in [(4, "cosine"), (5, "dot"), (6, "euclidean")] {
+            assert!(values.iter().any(|v| v["value"] == value
+                && v["meaning"]
+                    .as_str()
+                    .unwrap()
+                    .to_lowercase()
+                    .contains(metric)));
+        }
+    }
+    for (id, direction) in [
+        ("OBJECT-GET-RGB-COLORS", "out"),
+        ("OBJECT-SET-RGB-COLORS", "in"),
+    ] {
+        let result = model::build_result(&index::get().commands[id], 1.0);
+        let border = result.overloads[0]["params"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .find(|p| p["name"] == "borderColor")
+            .unwrap();
+        assert_eq!(border["direction"], direction);
+        assert_eq!(border["optional"], true);
+        assert_eq!(border["type"][0]["name"], "Text");
+        assert_eq!(border["type"][1]["name"], "Integer");
+    }
 }
